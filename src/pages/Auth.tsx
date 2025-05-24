@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Loader2, ChevronRight } from 'lucide-react';
+import { Loader2, ChevronRight, Mail, Lock } from 'lucide-react';
 import { WizardStep } from '../types/auth/types';
 import { supabase } from '../utils/auth/supabase';
 import { dummyResumeData } from '../utils/auth/constants';
@@ -325,20 +325,32 @@ export function Auth() {
                   exit={{opacity:0,x:-20}}
                   className="space-y-4">
                   {isLogin ? (
-                    <AccountStep
-                      name=""
-                      setName={() => {}}
-                      university=""
-                      setUniversity={() => {}}
-                      email={email}
-                      setEmail={setEmail}
-                      password={password}
-                      setPassword={setPassword}
-                      validationField={validationField}
-                      validationMessage={validationMessage}
-                      onValidationClose={() => setValidationField(null)}
-                      onInputChange={handleInputChange}
-                    />
+                    <>
+                      <div className="relative">
+                        <input
+                          type="email"
+                          value={email}
+                          onChange={e => setEmail(e.target.value)}
+                          placeholder="Email address"
+                          className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                        />
+                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10 flex-shrink-0">
+                          <Mail size={18} />
+                        </span>
+                      </div>
+                      <div className="relative">
+                        <input
+                          type="password"
+                          value={password}
+                          onChange={e => setPassword(e.target.value)}
+                          placeholder="Password"
+                          className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                        />
+                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10 flex-shrink-0">
+                          <Lock size={18} />
+                        </span>
+                      </div>
+                    </>
                   ) : renderStep()}
                 </motion.div>
               </AnimatePresence>
