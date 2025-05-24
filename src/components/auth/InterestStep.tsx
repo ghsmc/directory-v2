@@ -122,7 +122,7 @@ export function InterestStep({
               <button
                 key={interest}
                 type="button"
-                onClick={() => toggleInterest(interest)}
+                onMouseDown={e => { e.preventDefault(); toggleInterest(interest); }}
                 className={`px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors ${
                   selectedInterests.has(interest)
                     ? 'bg-blue-100 text-blue-700 border border-blue-200'
