@@ -381,7 +381,7 @@ export function Auth() {
         className="w-full max-w-md"
       >
         <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-          <div className="p-8">
+          <div className="p-8 max-h-[80vh] overflow-y-auto">
             <div className="flex items-center justify-center mb-8">
               <img
                 src="/logo.png"
