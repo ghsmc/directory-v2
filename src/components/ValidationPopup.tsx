@@ -16,14 +16,12 @@ export function ValidationPopup({ message, show, onClose }: ValidationPopupProps
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className="absolute -bottom-12 left-0 z-50 bg-white rounded-lg shadow-lg border border-gray-200 p-3 flex items-center gap-2"
+      className="absolute -bottom-12 left-0 z-50 bg-red-50 rounded-lg shadow-lg border border-red-200 p-3 flex items-center gap-2"
+      role="alert"
+      aria-live="assertive"
     >
-      <img
-        src="/logo.png"
-        alt="Milo"
-        className="w-5 h-5 rounded object-contain"
-      />
-      <span className="text-sm text-gray-700">{message}</span>
+      <AlertCircle className="w-5 h-5 text-red-400" />
+      <span className="text-sm text-red-700">{message}</span>
     </motion.div>
   );
 }
