@@ -23,13 +23,48 @@ export function CompanyStep({
     return companies.filter((c) => c.name.toLowerCase().includes(q));
   }, [query]);
 
-  const suggestions = useMemo(() => companies.slice(0, 8), []);
+  const suggestions = useMemo(() => companies.slice(0, 12), []);
 
   const toggleCompany = (companyName: string) => {
     const next = new Set(selectedCompanies);
     next.has(companyName) ? next.delete(companyName) : next.add(companyName);
     setSelectedCompanies(next);
   };
+
+  const renderCompanyGrid = (companiesToShow: typeof companies) => (
+    <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+      {companiesToShow.map((company) => (
+        <button
+          key={company.name}
+          type="button"
+          onClick={() => toggleCompany(company.name)}
+          className={`
+            relative group flex flex-col items-center gap-2 p-4 rounded-xl border transition-all duration-200
+            ${selectedCompanies.has(company.name)
+              ? 'bg-blue-50 border-blue-200 shadow-sm'
+              : 'bg-white border-gray-200 hover:border-gray-300 hover:shadow-sm'
+            }
+          `}
+        >
+          <div className="relative w-16 h-16 rounded-xl bg-white border border-gray-100 p-2 flex items-center justify-center">
+            <img
+              src={`https://img.logo.dev/${company.domain}?token=pk_VAZ6tvAVQHCDwKeaNRVyjQ`}
+              alt={company.name}
+              className="w-12 h-12 object-contain"
+            />
+            {selectedCompanies.has(company.name) && (
+              <div className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center">
+                <X size={12} className="text-white" />
+              </div>
+            )}
+          </div>
+          <span className="text-xs font-medium text-center line-clamp-2 text-gray-900">
+            {company.name}
+          </span>
+        </button>
+      ))}
+    </div>
+  );
 
   return (
     <>
@@ -40,7 +75,7 @@ export function CompanyStep({
           : "Are there any companies you find inspiring or interesting?"}
       </label>
 
-      <div className="relative mb-4">
+      <div className="relative mb-6">
         <Search
           size={16}
           className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -60,90 +95,20 @@ export function CompanyStep({
       </div>
 
       {selectedCompanies.size > 0 && (
-        <div className="overflow-x-auto mb-4 pb-1">
-          <div className="flex gap-2 min-w-max">
-            {Array.from(selectedCompanies).map((companyName) => {
-              const company = companies.find(c => c.name === companyName);
-              return (
-                <span
-                  key={companyName}
-                  className="flex items-center bg-blue-100 text-blue-700 border border-blue-200 rounded-full text-sm font-medium px-3 py-1 whitespace-nowrap"
-                >
-                  {companyName}
-                  <button
-                    type="button"
-                    className="ml-1 hover:text-blue-900"
-                    onClick={() => toggleCompany(companyName)}
-                  >
-                    <X size={12} />
-                  </button>
-                </span>
-              );
-            })}
-          </div>
+        <div className="mb-6">
+          <h4 className="text-sm font-medium text-gray-700 mb-3">Selected Companies</h4>
+          {renderCompanyGrid(companies.filter(c => selectedCompanies.has(c.name)))}
         </div>
       )}
 
-      {!searchFocused && query.trim() === '' && (
-        <div className="mb-4">
-          <h4 className="text-sm font-medium text-gray-700 mb-2">
-            You might be interested in
-          </h4>
-          <div className="grid grid-cols-2 gap-2">
-            {suggestions.map((company) => (
-              <button
-                key={company.name}
-                type="button"
-                onClick={() => toggleCompany(company.name)}
-                className={`
-                  flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors
-                  ${selectedCompanies.has(company.name)
-                    ? 'bg-blue-100 text-blue-700 border border-blue-200'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }
-                `}
-              >
-                <img
-                  src={`https://img.logo.dev/${company.domain}?token=pk_VAZ6tvAVQHCDwKeaNRVyjQ`}
-                  alt={company.name}
-                  className="w-4 h-4 object-contain"
-                />
-                <span className="truncate">{company.name}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      <div>
+        <h4 className="text-sm font-medium text-gray-700 mb-3">
+          {query.trim() ? 'Search Results' : 'Popular Companies'}
+        </h4>
+        {renderCompanyGrid(query.trim() ? filteredCompanies : suggestions)}
+      </div>
 
-      {searchFocused && (
-        <div className="max-h-56 overflow-y-auto pr-1">
-          <div className="grid grid-cols-2 gap-2">
-            {(query.trim() === '' ? companies : filteredCompanies).map((company) => (
-              <button
-                key={company.name}
-                type="button"
-                onMouseDown={e => { e.preventDefault(); toggleCompany(company.name); }}
-                className={`
-                  flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors
-                  ${selectedCompanies.has(company.name)
-                    ? 'bg-blue-100 text-blue-700 border border-blue-200'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }
-                `}
-              >
-                <img
-                  src={`https://img.logo.dev/${company.domain}?token=pk_VAZ6tvAVQHCDwKeaNRVyjQ`}
-                  alt={company.name}
-                  className="w-4 h-4 object-contain"
-                />
-                <span className="truncate">{company.name}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <p className="text-xs text-gray-500 mt-2">
+      <p className="text-xs text-gray-500 mt-4">
         We'll use this to surface mentors, alumni paths, and open roles.
       </p>
     </>
