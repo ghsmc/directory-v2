@@ -35,14 +35,47 @@ export const interests = [
 ].sort();
 
 export const companies = [
-  'Amazon', 'Apple', 'Anthropic', 'Bridgewater Associates', 'Google',
-  'Goldman Sachs', 'JP Morgan', 'Meta', 'Microsoft', 'OpenAI',
-  'Stripe', 'Tesla', 'Zillow', 'Netflix', 'Salesforce', 'Adobe',
-  'Oracle', 'IBM', 'Intel', 'NVIDIA', 'Uber', 'Airbnb', 'SpaceX',
-  'Palantir', 'Coinbase', 'Square', 'Shopify', 'Zoom', 'Slack',
-  'Dropbox', 'Pinterest', 'Snapchat', 'TikTok', 'LinkedIn',
-  'Twitter', 'Reddit', 'Discord', 'Figma', 'Notion', 'Canva'
-].sort();
+  { name: 'Amazon', domain: 'amazon.com' },
+  { name: 'Apple', domain: 'apple.com' },
+  { name: 'Anthropic', domain: 'anthropic.com' },
+  { name: 'Bridgewater Associates', domain: 'bridgewater.com' },
+  { name: 'Google', domain: 'google.com' },
+  { name: 'Goldman Sachs', domain: 'goldmansachs.com' },
+  { name: 'JP Morgan', domain: 'jpmorgan.com' },
+  { name: 'Meta', domain: 'meta.com' },
+  { name: 'Microsoft', domain: 'microsoft.com' },
+  { name: 'OpenAI', domain: 'openai.com' },
+  { name: 'Stripe', domain: 'stripe.com' },
+  { name: 'Tesla', domain: 'tesla.com' },
+  { name: 'Zillow', domain: 'zillow.com' },
+  { name: 'Netflix', domain: 'netflix.com' },
+  { name: 'Salesforce', domain: 'salesforce.com' },
+  { name: 'Adobe', domain: 'adobe.com' },
+  { name: 'Oracle', domain: 'oracle.com' },
+  { name: 'IBM', domain: 'ibm.com' },
+  { name: 'Intel', domain: 'intel.com' },
+  { name: 'NVIDIA', domain: 'nvidia.com' },
+  { name: 'Uber', domain: 'uber.com' },
+  { name: 'Airbnb', domain: 'airbnb.com' },
+  { name: 'SpaceX', domain: 'spacex.com' },
+  { name: 'Palantir', domain: 'palantir.com' },
+  { name: 'Coinbase', domain: 'coinbase.com' },
+  { name: 'Square', domain: 'square.com' },
+  { name: 'Shopify', domain: 'shopify.com' },
+  { name: 'Zoom', domain: 'zoom.us' },
+  { name: 'Slack', domain: 'slack.com' },
+  { name: 'Dropbox', domain: 'dropbox.com' },
+  { name: 'Pinterest', domain: 'pinterest.com' },
+  { name: 'Snapchat', domain: 'snap.com' },
+  { name: 'TikTok', domain: 'tiktok.com' },
+  { name: 'LinkedIn', domain: 'linkedin.com' },
+  { name: 'Twitter', domain: 'twitter.com' },
+  { name: 'Reddit', domain: 'reddit.com' },
+  { name: 'Discord', domain: 'discord.com' },
+  { name: 'Figma', domain: 'figma.com' },
+  { name: 'Notion', domain: 'notion.so' },
+  { name: 'Canva', domain: 'canva.com' }
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const dummyResumeData = {
   name: 'Raymond Hou',
@@ -74,4 +107,4 @@ export const dummyResumeData = {
       description: 'Built and deployed web applications using React and Node.js. Designed database schemas and implemented RESTful APIs serving 10k+ daily active users.'
     }
   ]
-}; 
+};

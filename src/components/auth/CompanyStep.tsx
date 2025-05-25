@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Briefcase, Search, X } from 'lucide-react';
-import { companies as ALL_COMPANIES } from '../../utils/auth/constants';
+import { companies } from '../../utils/auth/constants';
 
 interface CompanyStepProps {
   selectedCompanies: Set<string>;
@@ -15,29 +15,24 @@ export function CompanyStep({
   clarity,
   onFieldFocus
 }: CompanyStepProps) {
-  // State for search query
   const [query, setQuery] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
 
-  // Filtered companies based on search
   const filteredCompanies = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return ALL_COMPANIES.filter((c) => c.toLowerCase().includes(q));
+    return companies.filter((c) => c.name.toLowerCase().includes(q));
   }, [query]);
 
-  // Suggestions: first 8 companies
-  const suggestions = useMemo(() => ALL_COMPANIES.slice(0, 8), []);
+  const suggestions = useMemo(() => companies.slice(0, 8), []);
 
-  // Toggle company selection
-  const toggleCompany = (company: string) => {
+  const toggleCompany = (companyName: string) => {
     const next = new Set(selectedCompanies);
-    next.has(company) ? next.delete(company) : next.add(company);
+    next.has(companyName) ? next.delete(companyName) : next.add(companyName);
     setSelectedCompanies(next);
   };
 
   return (
     <>
-      {/* Title */}
       <label className="block text-sm font-medium text-gray-700 mb-3">
         <Briefcase size={16} className="inline mr-2" />
         {clarity === 'yes'
@@ -45,7 +40,6 @@ export function CompanyStep({
           : "Are there any companies you find inspiring or interesting?"}
       </label>
 
-      {/* Search */}
       <div className="relative mb-4">
         <Search
           size={16}
@@ -65,80 +59,93 @@ export function CompanyStep({
         />
       </div>
 
-      {/* Selected chips */}
       {selectedCompanies.size > 0 && (
         <div className="overflow-x-auto mb-4 pb-1">
           <div className="flex gap-2 min-w-max">
-            {Array.from(selectedCompanies).map((company) => (
-              <span
-                key={company}
-                className="flex items-center bg-blue-100 text-blue-700 border border-blue-200 rounded-full text-sm font-medium px-3 py-1 whitespace-nowrap"
-              >
-                {company}
-                <button
-                  type="button"
-                  className="ml-1 hover:text-blue-900"
-                  onClick={() => toggleCompany(company)}
+            {Array.from(selectedCompanies).map((companyName) => {
+              const company = companies.find(c => c.name === companyName);
+              return (
+                <span
+                  key={companyName}
+                  className="flex items-center bg-blue-100 text-blue-700 border border-blue-200 rounded-full text-sm font-medium px-3 py-1 whitespace-nowrap"
                 >
-                  <X size={12} />
-                </button>
-              </span>
-            ))}
+                  {companyName}
+                  <button
+                    type="button"
+                    className="ml-1 hover:text-blue-900"
+                    onClick={() => toggleCompany(companyName)}
+                  >
+                    <X size={12} />
+                  </button>
+                </span>
+              );
+            })}
           </div>
         </div>
       )}
 
-      {/* Suggestions grid (only before focus) */}
       {!searchFocused && query.trim() === '' && (
         <div className="mb-4">
           <h4 className="text-sm font-medium text-gray-700 mb-2">
             You might be interested in
           </h4>
           <div className="grid grid-cols-2 gap-2">
-            {suggestions.map((s) => (
+            {suggestions.map((company) => (
               <button
-                key={s}
+                key={company.name}
                 type="button"
-                onClick={() => toggleCompany(s)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors ${
-                  selectedCompanies.has(s)
+                onClick={() => toggleCompany(company.name)}
+                className={`
+                  flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors
+                  ${selectedCompanies.has(company.name)
                     ? 'bg-blue-100 text-blue-700 border border-blue-200'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                  }
+                `}
               >
-                {s}
+                <img
+                  src={`https://img.logo.dev/${company.domain}?token=pk_VAZ6tvAVQHCDwKeaNRVyjQ`}
+                  alt={company.name}
+                  className="w-4 h-4 object-contain"
+                />
+                <span className="truncate">{company.name}</span>
               </button>
             ))}
           </div>
         </div>
       )}
 
-      {/* Full grid (after focus) */}
       {searchFocused && (
         <div className="max-h-56 overflow-y-auto pr-1">
           <div className="grid grid-cols-2 gap-2">
-            {(query.trim() === '' ? ALL_COMPANIES : filteredCompanies).map((company) => (
+            {(query.trim() === '' ? companies : filteredCompanies).map((company) => (
               <button
-                key={company}
+                key={company.name}
                 type="button"
-                onMouseDown={e => { e.preventDefault(); toggleCompany(company); }}
-                className={`px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors ${
-                  selectedCompanies.has(company)
+                onMouseDown={e => { e.preventDefault(); toggleCompany(company.name); }}
+                className={`
+                  flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-left transition-colors
+                  ${selectedCompanies.has(company.name)
                     ? 'bg-blue-100 text-blue-700 border border-blue-200'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                  }
+                `}
               >
-                {company}
+                <img
+                  src={`https://img.logo.dev/${company.domain}?token=pk_VAZ6tvAVQHCDwKeaNRVyjQ`}
+                  alt={company.name}
+                  className="w-4 h-4 object-contain"
+                />
+                <span className="truncate">{company.name}</span>
               </button>
             ))}
           </div>
         </div>
       )}
 
-      {/* Helper text */}
       <p className="text-xs text-gray-500 mt-2">
         We'll use this to surface mentors, alumni paths, and open roles.
       </p>
     </>
   );
-} 
+}
