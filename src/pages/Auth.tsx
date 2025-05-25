@@ -6,9 +6,17 @@ import { Mail, Lock, User, ArrowRight, Loader2, Upload, Linkedin, Briefcase, Hea
 import { UniversityDropdown } from '../components/UniversityDropdown';
 import { ValidationPopup } from '../components/ValidationPopup';
 
+// Initialize Supabase client
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
+  import.meta.env.VITE_SUPABASE_ANON_KEY,
+  {
+    auth: {
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: true
+    }
+  }
 );
 
 const interests = [
@@ -35,19 +43,6 @@ const companies = [
   'Tesla',
   'SpaceX',
   'Stripe'
-];
-
-const universities = [
-  'Yale University',
-  'Harvard University',
-  'Princeton University',
-  'MIT',
-  'Stanford University',
-  'Columbia University',
-  'University of Pennsylvania',
-  'Brown University',
-  'Dartmouth College',
-  'Cornell University'
 ];
 
 export function Auth() {
@@ -176,7 +171,8 @@ export function Auth() {
               interests: Array.from(selectedInterests),
               target_companies: Array.from(selectedCompanies)
             },
-          },
+            emailRedirectTo: `${window.location.origin}/auth/callback`
+          }
         });
         if (error) throw error;
 
