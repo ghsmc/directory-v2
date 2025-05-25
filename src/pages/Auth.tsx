@@ -2,7 +2,6 @@ import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2, ChevronRight, Mail, Lock } from 'lucide-react';
 import { WizardStep } from '../types/auth/types';
-import { supabase } from '../utils/auth/supabase';
 import { dummyResumeData } from '../utils/auth/constants';
 import { AccountStep } from '../components/auth/AccountStep';
 import { ProfessionalStep } from '../components/auth/ProfessionalStep';
@@ -11,12 +10,13 @@ import { ClarityStep } from '../components/auth/ClarityStep';
 import { InterestStep } from '../components/auth/InterestStep';
 import { CompanyStep } from '../components/auth/CompanyStep';
 
-export function Auth() {
-  /* ----- UI state ------------------------------------------------------ */
+interface AuthProps {
+  onLogin: () => void;
+}
+
+export function Auth({ onLogin }: AuthProps) {
   const [isLogin, setIsLogin] = useState(true);
   const [step, setStep] = useState<WizardStep>(WizardStep.Account);
-
-  /* ----- Form fields --------------------------------------------------- */
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -27,14 +27,11 @@ export function Auth() {
   const [selectedInterests, setSelectedInterests] = useState<Set<string>>(new Set());
   const [resume, setResume] = useState<File | null>(null);
   const [resumeData, setResumeData] = useState(dummyResumeData);
-
-  /* ----- UX state ------------------------------------------------------ */
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [validationMessage, setValidationMessage] = useState('');
   const [validationField, setValidationField] = useState<string | null>(null);
 
-  /* ---------- Validation ---------------------------------------------- */
   const required = (field: string, value: string, label?: string) => {
     if (!value) {
       setValidationField(field);
@@ -97,7 +94,6 @@ export function Auth() {
     return true;
   };
 
-  /* ---------- Navigation ---------------------------------------------- */
   const goNext = () => {
     if (!validateStep()) return;
     
@@ -108,59 +104,31 @@ export function Auth() {
     }
   };
 
-  /* ---------- Submission ---------------------------------------------- */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (isLogin) {
       if (!(required('email', email) && required('password', password))) return;
       setLoading(true);
-      try {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
-        if (error) throw error;
-      } catch (err: any) {
-        setError(err.message);
-      } finally { 
-        setLoading(false); 
-      }
+      // Demo login - simulate API call
+      setTimeout(() => {
+        setLoading(false);
+        onLogin();
+      }, 1000);
     } else {
       goNext();
     }
   };
 
-  const handleFinalSubmit = async () => {
+  const handleFinalSubmit = () => {
     setLoading(true);
-    try {
-      const { error } = await supabase.auth.signUp({
-        email, 
-        password,
-        options: {
-          data: {
-            full_name: name, 
-            university, 
-            linkedin_url: linkedinUrl,
-            know_target: clarity === 'yes',
-            interests: Array.from(selectedInterests),
-            target_companies: Array.from(selectedCompanies)
-          }
-        }
-      });
-      if (error) throw error;
-
-      if (resume) {
-        const { error: uploadError } = await supabase
-          .storage.from('resumes')
-          .upload(`${email}/resume.pdf`, resume);
-        if (uploadError) throw uploadError;
-      }
-    } catch (err: any) {
-      setError(err.message);
-    } finally { 
-      setLoading(false); 
-    }
+    // Demo signup - simulate API call
+    setTimeout(() => {
+      setLoading(false);
+      onLogin();
+    }, 1500);
   };
 
-  /* ---------- Auto-clear validation on input change ------------------ */
   const handleInputChange = (field: string, value: string, setter: (value: string) => void) => {
     setter(value);
     if (validationField === field) {
@@ -169,10 +137,8 @@ export function Auth() {
     }
   };
 
-  /* ---------- Render logic -------------------------------------------- */
   const dotCount = useMemo(() => 6, []);
 
-  // Dismiss validation after 3 seconds
   useEffect(() => {
     if (validationField && validationMessage) {
       const timeout = setTimeout(() => {
@@ -183,13 +149,11 @@ export function Auth() {
     }
   }, [validationField, validationMessage]);
 
-  // Handler to clear validation
   const clearValidation = () => {
     setValidationField(null);
     setValidationMessage('');
   };
 
-  // Handler to pass to input fields for onFocus
   const handleFieldFocus = (field: string) => {
     if (validationField === field) {
       clearValidation();
@@ -294,7 +258,6 @@ export function Auth() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      {/* background grid + gradient */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)]
             [background-size:16px_16px] opacity-40"/>
@@ -391,7 +354,6 @@ export function Auth() {
             </div>
           </div>
 
-          {/* Navigation buttons */}
           {!isLogin && step > WizardStep.Account && (
             <div className="absolute bottom-4 left-4">
               <button
@@ -405,7 +367,6 @@ export function Auth() {
             </div>
           )}
 
-          {/* Single Next button in bottom right */}
           {!isLogin && step < WizardStep.Companies && (
             <div className="absolute bottom-4 right-4">
               <button
