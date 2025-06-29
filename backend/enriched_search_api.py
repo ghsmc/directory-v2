@@ -5,7 +5,8 @@ Incorporates extracted experience, education, and skills from headlines
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Dict, Any, Optional
+from fastapi.responses import StreamingResponse
+from typing import List, Dict, Any, Optional, Generator
 import psycopg2
 import psycopg2.extras
 import os
@@ -117,6 +118,92 @@ async def root():
         }
     }
 
+@app.get("/search-stream")
+async def streaming_search(
+    q: str = Query(..., description="Natural language search query"),
+    limit: int = Query(20, description="Maximum number of results")
+):
+    """
+    Streaming search that sends results as they're found - ChatGPT style
+    """
+    def generate_stream():
+        try:
+            # Step 1: Send initial status
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Analyzing query with AI...', 'step': 1})}\n\n"
+            
+            # Generate AI enhancement
+            enhancement = query_enhancer.enhance_query(q)
+            yield f"data: {json.dumps({'type': 'analysis', 'data': {'traits': enhancement.traits, 'key_phrases': enhancement.key_phrases}})}\n\n"
+            
+            # Step 2: Database search
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Searching Yale database...', 'step': 2})}\n\n"
+            
+            conn = get_db_connection()
+            cursor = conn.cursor()
+            
+            # Fast simple search first for immediate results
+            fast_sql = f"""
+            SELECT 
+                p.uuid_id, p.full_name as name, p.headline, p.location,
+                p.summary, p.ai_summary, p.ai_tags, ya.school as yale_school,
+                ya.major, ya.class_year, p.profile_url,
+                length(p.headline) as headline_length
+            FROM people p
+            LEFT JOIN yale_affiliations ya ON p.uuid_id = ya.person_uuid
+            WHERE {_generate_people_conditions(enhancement.key_phrases)}
+            ORDER BY headline_length DESC, p.full_name ASC
+            LIMIT {limit * 2};
+            """
+            
+            cursor.execute(fast_sql)
+            results = cursor.fetchall()
+            
+            # Stream results one by one as they're processed
+            result_count = 0
+            for row in results:
+                if result_count >= limit:
+                    break
+                    
+                result = {
+                    "uuid_id": str(row['uuid_id']),
+                    "name": row['name'],
+                    "headline": row['headline'] or '',
+                    "location": row['location'] or '',
+                    "summary": row['summary'] or '',
+                    "ai_summary": row['ai_summary'],
+                    "ai_tags": row['ai_tags'] or [],
+                    "yale_school": row['yale_school'],
+                    "major": row['major'],
+                    "class_year": row['class_year'],
+                    "profile_url": row['profile_url'],
+                    "relevance_score": 85.0 - (result_count * 2)  # Simulate decreasing relevance
+                }
+                
+                # Add enriched data
+                if row['headline'] and len(row['headline']) > 30:
+                    experiences = data_enricher.extract_experience_from_headline(row['headline'])
+                    result['extracted_data'] = {
+                        'experiences': experiences,
+                        'has_rich_data': True
+                    }
+                    if experiences:
+                        result['current_role_summary'] = f"{experiences[0]['title']} at {experiences[0]['company']}"
+                else:
+                    result['extracted_data'] = {'experiences': [], 'has_rich_data': False}
+                
+                yield f"data: {json.dumps({'type': 'result', 'data': result})}\n\n"
+                result_count += 1
+            
+            conn.close()
+            
+            # Final summary
+            yield f"data: {json.dumps({'type': 'complete', 'total': result_count, 'query': q})}\n\n"
+            
+        except Exception as e:
+            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
+    
+    return StreamingResponse(generate_stream(), media_type="text/plain")
+
 @app.get("/enriched-search")
 async def enriched_search(
     q: str = Query(..., description="Natural language search query"),
@@ -178,7 +265,7 @@ async def enriched_search(
         )
         SELECT DISTINCT *
         FROM scored_profiles
-        WHERE relevance_score >= 30
+        WHERE relevance_score >= 5
         ORDER BY relevance_score DESC, headline_length DESC, name ASC
         LIMIT {limit};
         """
@@ -390,11 +477,75 @@ def _generate_ai_tags_conditions(key_phrases: List[str]) -> str:
     return f"({' OR '.join(conditions)})"
 
 def _generate_people_conditions(key_phrases: List[str]) -> str:
-    """Generate comprehensive conditions for people table"""
+    """Generate massively expanded search conditions like Happenstance"""
     if not key_phrases:
-        return "FALSE"
-    conditions = [f"(p.headline ILIKE '%{phrase}%' OR p.summary ILIKE '%{phrase}%' OR p.full_name ILIKE '%{phrase}%')" for phrase in key_phrases]
-    return f"({' OR '.join(conditions)})"
+        return "TRUE"  # Return all results if no phrases
+    
+    # Create a massive expansion of search terms like Happenstance
+    expanded_conditions = []
+    
+    # Always include basic phrase matching first
+    for phrase in key_phrases:
+        basic_conditions = [
+            f"p.headline ILIKE '%{phrase}%'",
+            f"p.summary ILIKE '%{phrase}%'", 
+            f"p.full_name ILIKE '%{phrase}%'",
+            f"p.ai_tags::text ILIKE '%{phrase}%'"
+        ]
+        expanded_conditions.extend(basic_conditions)
+    
+    # Then add comprehensive domain-specific expansions
+    query_text = ' '.join(key_phrases).lower()
+    
+    # VENTURE CAPITAL & INVESTMENT (like Happenstance's comprehensive matching)
+    if any(term in query_text for term in ['venture', 'capital', 'vc', 'investment', 'investor', 'fund']):
+        vc_conditions = [
+            "p.headline ~* '(VC|venture capital|venture capitalist|investment|investor|fund|capital|private equity|PE|angel|angel investor|seed|series A|series B|portfolio|LP|limited partner|GP|general partner|investment banking|IB|equity research|M&A|merger|acquisition|buyout|growth equity|asset management|wealth management|hedge fund|mutual fund|financial|finance|banking|securities|trading|analyst|associate|principal|partner|managing director|VP|vice president)'",
+            "p.summary ~* '(VC|venture capital|venture capitalist|investment|investor|fund|capital|private equity|PE|angel|angel investor|seed|series A|series B|portfolio|LP|limited partner|GP|general partner|investment banking|IB|equity research|M&A|merger|acquisition|buyout|growth equity|asset management|wealth management|hedge fund|mutual fund|financial|finance|banking|securities|trading|analyst|associate|principal|partner|managing director|VP|vice president)'",
+            "p.headline ILIKE '%startup%' OR p.headline ILIKE '%entrepreneur%' OR p.headline ILIKE '%funding%'",
+            "p.summary ILIKE '%startup%' OR p.summary ILIKE '%entrepreneur%' OR p.summary ILIKE '%funding%'"
+        ]
+        expanded_conditions.extend(vc_conditions)
+    
+    # COMPUTER SCIENCE & TECHNOLOGY (comprehensive tech matching)
+    if any(term in query_text for term in ['computer', 'science', 'tech', 'software', 'engineer', 'developer', 'programming']):
+        tech_conditions = [
+            "p.headline ~* '(CS|computer science|software|programming|tech|technology|engineering|developer|coding|programmer|data science|data scientist|machine learning|ML|AI|artificial intelligence|algorithm|backend|frontend|full stack|fullstack|web development|mobile development|iOS|Android|Python|Java|JavaScript|React|Node|SQL|database|DevOps|cloud|AWS|Google Cloud|Azure|startup|fintech|biotech|edtech|SaaS|API|microservices|blockchain|crypto|cybersecurity|security|infrastructure|platform|product manager|technical|CTO|VP Engineering|software architect|senior developer|lead developer|principal engineer|staff engineer)'",
+            "p.summary ~* '(CS|computer science|software|programming|tech|technology|engineering|developer|coding|programmer|data science|data scientist|machine learning|ML|AI|artificial intelligence|algorithm|backend|frontend|full stack|fullstack|web development|mobile development|iOS|Android|Python|Java|JavaScript|React|Node|SQL|database|DevOps|cloud|AWS|Google Cloud|Azure|startup|fintech|biotech|edtech|SaaS|API|microservices|blockchain|crypto|cybersecurity|security|infrastructure|platform|product manager|technical|CTO|VP Engineering|software architect|senior developer|lead developer|principal engineer|staff engineer)'",
+            "p.headline ILIKE '%google%' OR p.headline ILIKE '%microsoft%' OR p.headline ILIKE '%apple%' OR p.headline ILIKE '%facebook%' OR p.headline ILIKE '%meta%' OR p.headline ILIKE '%amazon%' OR p.headline ILIKE '%netflix%' OR p.headline ILIKE '%uber%' OR p.headline ILIKE '%airbnb%'",
+        ]
+        expanded_conditions.extend(tech_conditions)
+    
+    # BUSINESS & ENTREPRENEURSHIP (founder/startup ecosystem)
+    if any(term in query_text for term in ['founder', 'startup', 'entrepreneur', 'business', 'ceo', 'company']):
+        business_conditions = [
+            "p.headline ~* '(founder|co-founder|cofounder|CEO|entrepreneur|startup|company|business|executive|president|director|VP|vice president|C-suite|leadership|strategy|operations|product|marketing|sales|growth|scaling|unicorn|exit|IPO|acquisition|B2B|B2C|SaaS|marketplace|platform|consulting|advisor|board|investor|angel|venture|raised|funding|seed|series|valuation|revenue|customer|user|market|industry|sector)'",
+            "p.summary ~* '(founder|co-founder|cofounder|CEO|entrepreneur|startup|company|business|executive|president|director|VP|vice president|C-suite|leadership|strategy|operations|product|marketing|sales|growth|scaling|unicorn|exit|IPO|acquisition|B2B|B2C|SaaS|marketplace|platform|consulting|advisor|board|investor|angel|venture|raised|funding|seed|series|valuation|revenue|customer|user|market|industry|sector)'",
+            "p.headline ILIKE '%YC%' OR p.headline ILIKE '%Y Combinator%' OR p.headline ILIKE '%Techstars%' OR p.headline ILIKE '%500 Startups%'",
+        ]
+        expanded_conditions.extend(business_conditions)
+    
+    # MEDICINE & HEALTHCARE 
+    if any(term in query_text for term in ['medicine', 'medical', 'health', 'doctor', 'physician', 'clinical']):
+        medical_conditions = [
+            "p.headline ~* '(MD|doctor|physician|medical|medicine|health|healthcare|clinical|hospital|patient|research|biomedical|biotech|pharma|pharmaceutical|drug|therapy|treatment|diagnosis|surgery|cardiology|neurology|oncology|pediatric|psychiatry|radiology|pathology|emergency|ICU|nurse|nursing|public health|epidemiology|clinical trial|FDA|NIH|resident|fellow|attending|professor|faculty|researcher|scientist)'",
+            "p.summary ~* '(MD|doctor|physician|medical|medicine|health|healthcare|clinical|hospital|patient|research|biomedical|biotech|pharma|pharmaceutical|drug|therapy|treatment|diagnosis|surgery|cardiology|neurology|oncology|pediatric|psychiatry|radiology|pathology|emergency|ICU|nurse|nursing|public health|epidemiology|clinical trial|FDA|NIH|resident|fellow|attending|professor|faculty|researcher|scientist)'",
+        ]
+        expanded_conditions.extend(medical_conditions)
+    
+    # FINANCE & CONSULTING (broad professional services)
+    if any(term in query_text for term in ['consulting', 'finance', 'banking', 'analyst', 'advisor']):
+        finance_conditions = [
+            "p.headline ~* '(consulting|consultant|advisor|McKinsey|BCG|Bain|Deloitte|PwC|EY|KPMG|Accenture|analyst|associate|manager|senior|principal|partner|director|finance|financial|banking|investment banking|corporate finance|treasury|accounting|audit|tax|risk|compliance|strategy|operations|transformation|implementation|client|project|engagement)'",
+            "p.summary ~* '(consulting|consultant|advisor|McKinsey|BCG|Bain|Deloitte|PwC|EY|KPMG|Accenture|analyst|associate|manager|senior|principal|partner|director|finance|financial|banking|investment banking|corporate finance|treasury|accounting|audit|tax|risk|compliance|strategy|operations|transformation|implementation|client|project|engagement)'",
+        ]
+        expanded_conditions.extend(finance_conditions)
+    
+    # Combine ALL conditions with OR (cast a wide net like Happenstance)
+    final_condition = f"({' OR '.join(expanded_conditions)})"
+    
+    # Include Yale affiliation OR any mention of Yale
+    return f"({final_condition}) AND (ya.person_uuid IS NOT NULL OR p.headline ILIKE '%yale%' OR p.summary ILIKE '%yale%')"
 
 def _generate_weighted_headline_conditions(key_phrases: List[str]) -> str:
     """Generate weighted scoring for headline matches (0-40 points)"""

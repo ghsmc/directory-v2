@@ -335,74 +335,96 @@ body {
 
 /* Landing Page */
 .landing-page {
-  padding: 120px 0 80px 0;
+  padding: 80px 0 80px 0;
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-primary);
 }
 
 .hero-section {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .hero-title {
-  font-size: 56px;
-  font-weight: 600;
-  margin: 0 0 24px 0;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
   color: var(--text-primary);
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   transition: color 0.3s ease;
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--text-secondary);
-  margin: 0 0 48px 0;
+  margin: 0 0 64px 0;
   font-weight: 400;
   line-height: 1.4;
   transition: color 0.3s ease;
 }
 
 .search-form {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .search-container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
 
-.search-input {
+.search-input-wrapper {
+  position: relative;
   width: 100%;
-  height: 56px;
+}
+
+.search-input-large {
+  width: 100%;
+  height: 72px;
   background: var(--input-bg);
-  border: 1px solid var(--border-secondary);
-  border-radius: 12px;
-  padding: 0 20px;
-  font-size: 16px;
+  border: 2px solid var(--border-primary);
+  border-radius: 16px;
+  padding: 0 24px;
+  font-size: 18px;
   color: var(--text-primary);
   outline: none;
   transition: all 0.2s ease;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.search-input:focus {
+.search-input-large:focus {
   border-color: var(--accent-primary);
   background: var(--bg-primary);
-  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+  box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.dark-mode .search-input:focus {
-  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+.dark-mode .search-input-large {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.search-input::placeholder {
+.dark-mode .search-input-large:focus {
+  box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.search-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
   color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  opacity: 0.7;
 }
 
 .role-categories {
@@ -410,6 +432,37 @@ body {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+.role-button-new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  justify-content: center;
+}
+
+.role-button-new:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.role-button-new .role-icon {
+  font-size: 16px;
+}
+
+.role-button-new .role-label {
+  font-weight: 500;
 }
 
 .role-button {

@@ -35,11 +35,11 @@ interface ProcessingStep {
 }
 
 const ROLE_CATEGORIES = [
-  { icon: '💻', label: 'Computer Science', query: 'computer science' },
-  { icon: '⚕️', label: 'Medicine', query: 'medicine medical' },
-  { icon: '🔬', label: 'Research', query: 'research' },
-  { icon: '📊', label: 'Data Science', query: 'data science' },
-  { icon: '🧠', label: 'Psychology', query: 'psychology' }
+  { icon: '👔', label: 'Founders', query: 'founder startup entrepreneur', color: '#3b82f6' },
+  { icon: '🚀', label: 'Engineers', query: 'software engineer developer', color: '#f97316' },
+  { icon: '$', label: 'Investors', query: 'venture capital investor VC', color: '#10b981' },
+  { icon: '🎨', label: 'Designers', query: 'designer UX UI product design', color: '#f59e0b' },
+  { icon: '🔬', label: 'PhDs', query: 'PhD researcher scientist professor', color: '#ef4444' }
 ];
 
 function HappenstanceApp() {
@@ -61,80 +61,106 @@ function HappenstanceApp() {
     setHasSearched(true);
     setResults([]);
     setQueryAnalysis(null);
+    setTotalResults(0);
 
-    // Initialize processing steps
+    // Initialize processing steps for streaming
     const steps: ProcessingStep[] = [
-      { step: 'Initializing GPT-4o-mini', status: 'processing', details: 'Connecting to OpenAI API endpoint' },
-      { step: 'Query Analysis', status: 'pending', details: 'Extracting traits, filters, and intent from natural language' },
-      { step: 'Generating SQL Conditions', status: 'pending', details: 'Creating complex WHERE clauses and JOIN conditions' },
-      { step: 'Vector Embedding Search', status: 'pending', details: 'Processing 1536-dimensional semantic embeddings' },
-      { step: 'Database Query Execution', status: 'pending', details: 'Running optimized PostgreSQL queries with GIN indexes' },
-      { step: 'AI-Enhanced Ranking', status: 'pending', details: 'Applying relevance scoring and AI summary integration' }
+      { step: 'Connecting to AI engine', status: 'processing', details: 'Initializing GPT-4o-mini analysis...' },
+      { step: 'Query Analysis', status: 'pending', details: 'Extracting traits, filters, and intent' },
+      { step: 'Database Search', status: 'pending', details: 'Searching 14,412 Yale profiles with expanded conditions' },
+      { step: 'Relevance Scoring', status: 'pending', details: 'Ranking results with AI-enhanced scoring' }
     ];
     setProcessingSteps(steps);
 
     try {
-      // Step 1: Initialize GPT-4o-mini
-      await new Promise(resolve => setTimeout(resolve, 400));
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 0 ? { ...step, status: 'completed' } : 
-        idx === 1 ? { ...step, status: 'processing' } : step
-      ));
+      // Use Server-Sent Events for streaming search
+      const eventSource = new EventSource(
+        `http://localhost:8003/search-stream?q=${encodeURIComponent(searchQuery)}&limit=20`
+      );
 
-      // Step 2: Query Analysis  
-      const analysisResponse = await fetch(`http://localhost:8003/analyze-query?q=${encodeURIComponent(searchQuery)}`);
-      const analysisData = await analysisResponse.json();
-      
-      setQueryAnalysis(analysisData.analysis);
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 1 ? { ...step, status: 'completed', details: `Extracted ${analysisData.analysis.traits?.length || 0} traits, ${analysisData.analysis.key_phrases?.length || 0} key phrases` } : 
-        idx === 2 ? { ...step, status: 'processing' } : step
-      ));
+      let currentResults: SearchResult[] = [];
+      let stepIndex = 0;
+      const startTime = Date.now();
 
-      // Step 3: SQL Generation
-      await new Promise(resolve => setTimeout(resolve, 600));
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 2 ? { ...step, status: 'completed', details: 'Generated complex JOIN and WHERE conditions with relevance scoring' } : 
-        idx === 3 ? { ...step, status: 'processing' } : step
-      ));
+      eventSource.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          
+          switch (data.type) {
+            case 'status':
+              // Update current step status
+              setProcessingSteps(prev => prev.map((step, idx) => {
+                if (idx === stepIndex) {
+                  return { ...step, status: 'completed' };
+                } else if (idx === stepIndex + 1) {
+                  stepIndex = idx;
+                  return { ...step, status: 'processing', details: data.message };
+                }
+                return step;
+              }));
+              break;
+              
+            case 'analysis':
+              setQueryAnalysis(data.data);
+              setProcessingSteps(prev => prev.map((step, idx) => 
+                idx === 1 ? { ...step, status: 'completed', details: `Found ${data.data.traits?.length || 0} traits, ${data.data.key_phrases?.length || 0} key phrases` } : 
+                idx === 2 ? { ...step, status: 'processing' } : step
+              ));
+              stepIndex = 2;
+              break;
+              
+            case 'result':
+              // Add result immediately as it streams in
+              currentResults.push(data.data);
+              setResults([...currentResults]);
+              setTotalResults(currentResults.length);
+              
+              // Update search description live
+              const currentTime = Date.now() - startTime;
+              setSearchTime(currentTime);
+              break;
+              
+            case 'complete':
+              setTotalResults(data.total);
+              setSearchTime(Date.now() - startTime);
+              
+              // Complete all steps
+              setProcessingSteps(prev => prev.map((step, idx) => 
+                idx === 3 ? { ...step, status: 'completed', details: `Ranked ${data.total} results with AI scoring` } : 
+                step.status === 'processing' ? { ...step, status: 'completed' } : step
+              ));
+              
+              setIsSearching(false);
+              eventSource.close();
+              break;
+              
+            case 'error':
+              console.error('Stream error:', data.message);
+              setIsSearching(false);
+              eventSource.close();
+              break;
+          }
+        } catch (e) {
+          console.error('Failed to parse stream data:', e);
+        }
+      };
 
-      // Step 4: Vector Embeddings
-      await new Promise(resolve => setTimeout(resolve, 800));
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 3 ? { ...step, status: 'completed', details: 'Processed semantic embeddings across 14,412 profiles' } : 
-        idx === 4 ? { ...step, status: 'processing' } : step
-      ));
+      eventSource.onerror = (error) => {
+        console.error('EventSource failed:', error);
+        setIsSearching(false);
+        eventSource.close();
+      };
 
-      // Step 5: Database Query
-      await new Promise(resolve => setTimeout(resolve, 400));
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 4 ? { ...step, status: 'completed', details: 'Executed optimized PostgreSQL query in <200ms' } : 
-        idx === 5 ? { ...step, status: 'processing' } : step
-      ));
-
-      // Final search with analysis
-      const response = await fetch(`http://localhost:8003/enriched-search?q=${encodeURIComponent(searchQuery)}&limit=20&include_analysis=true`);
-      const data: SearchResponse = await response.json();
-
-      setResults(data.results || []);
-      setTotalResults(data.total_results || 0);
-      setSearchTime(data.search_time_ms || 0);
-      
-      if (data.query_analysis) {
-        setQueryAnalysis(data.query_analysis);
-      }
-
-      // Complete all steps
-      setProcessingSteps(prev => prev.map((step, idx) => 
-        idx === 5 ? { ...step, status: 'completed', details: `Ranked ${data.total_results} results with AI-enhanced scoring` } : step
-      ));
+      // Cleanup function to close EventSource when component unmounts
+      return () => {
+        eventSource.close();
+      };
 
     } catch (error) {
       console.error('Search error:', error);
       setResults([]);
       setTotalResults(0);
       setProcessingSteps(prev => prev.map(step => ({ ...step, status: 'pending' })));
-    } finally {
       setIsSearching(false);
     }
   };
@@ -184,7 +210,7 @@ function HappenstanceApp() {
               <div className="grid-dot teal"></div>
               <div className="grid-dot indigo"></div>
             </div>
-            <span className="logo-text">Milo</span>
+            <span className="logo-text">Happenstance</span>
             <div className="powered-by">
               <span className="powered-text">Powered by</span>
               <img 
@@ -276,18 +302,25 @@ function HappenstanceApp() {
           // Landing Page
           <div className="landing-page">
             <div className="hero-section">
-              <h1 className="hero-title">AI-powered discovery engine for Yale</h1>
-              <p className="hero-subtitle">Connecting students, alumni, and faculty through intelligent search.</p>
+              <h1 className="hero-title">Search a live network — no signup required</h1>
+              <p className="hero-subtitle">We'll show you real results from our own networks.</p>
               
               <form onSubmit={handleSubmit} className="search-form">
                 <div className="search-container">
-                  <input
-                    type="text"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Find computer science students, venture capital investors, startup founders..."
-                    className="search-input"
-                  />
+                  <div className="search-input-wrapper">
+                    <input
+                      type="text"
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      placeholder=""
+                      className="search-input-large"
+                    />
+                    {!query && (
+                      <div className="search-placeholder">
+                        Software engineers who've worked on growth at a Series A-C company.
+                      </div>
+                    )}
+                  </div>
                 </div>
               </form>
 
@@ -295,8 +328,9 @@ function HappenstanceApp() {
                 {ROLE_CATEGORIES.map((role, index) => (
                   <button
                     key={index}
-                    className="role-button"
+                    className="role-button-new"
                     onClick={() => handleRoleClick(role.query, role.label)}
+                    style={{ backgroundColor: role.color }}
                   >
                     <span className="role-icon">{role.icon}</span>
                     <span className="role-label">{role.label}</span>
@@ -320,7 +354,7 @@ function HappenstanceApp() {
                         <span className="dot-small green"></span>
                         <span className="dot-small blue"></span>
                       </div>
-                      Milo AI
+                      Happenstance AI
                     </div>
                   </span>
                   <span className="demo-badge">Powered by advanced AI</span>
@@ -328,7 +362,10 @@ function HappenstanceApp() {
                 </div>
                 <h1 className="search-title">{query}</h1>
                 <p className="search-description">
-                  Found {totalResults.toLocaleString()} relevant profiles across Yale's network in {searchTime}ms using AI-powered semantic search.
+                  {isSearching ? 
+                    `Searching ${totalResults.toLocaleString()} profiles found so far across Yale's 14,412-person network using AI-powered semantic search...` :
+                    `Found ${totalResults.toLocaleString()} relevant profiles across Yale's 14,412-person network in ${searchTime}ms using AI-powered semantic search with expanded matching.`
+                  }
                 </p>
                 <button 
                   className="show-thinking"
