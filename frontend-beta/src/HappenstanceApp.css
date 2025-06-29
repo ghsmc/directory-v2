@@ -1,0 +1,555 @@
+/* Happenstance-style CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.happenstance-app {
+  min-height: 100vh;
+  background-color: #0f0f0f;
+}
+
+/* Header */
+.header {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 0 24px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #888888;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn {
+  background: transparent;
+  border: none;
+  color: #888888;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.2s;
+}
+
+.login-btn:hover {
+  color: #ffffff;
+}
+
+.signup-btn {
+  background: #00ff88;
+  border: none;
+  color: #0f0f0f;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.signup-btn:hover {
+  background: #00e577;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Landing Page */
+.landing-page {
+  padding: 80px 0;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #888888;
+  margin: 0 0 48px 0;
+}
+
+.search-form {
+  margin-bottom: 48px;
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 60px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 18px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #00ff88;
+}
+
+.search-input::placeholder {
+  color: #666666;
+}
+
+.role-categories {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.role-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-button:hover {
+  background: #2a2a2a;
+  border-color: #00ff88;
+}
+
+.role-icon {
+  font-size: 18px;
+}
+
+/* Testimonial */
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 0 32px 0;
+  line-height: 1.4;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  background: #00ff88;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #0f0f0f;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.author-title {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* Results Page */
+.results-page {
+  padding: 24px 0;
+}
+
+.results-header {
+  margin-bottom: 32px;
+}
+
+.search-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.you-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.demo-badge {
+  background: #00ff88;
+  color: #0f0f0f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.time-indicator {
+  color: #888888;
+  font-size: 14px;
+}
+
+.search-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.search-description {
+  color: #888888;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.show-thinking {
+  background: transparent;
+  border: none;
+  color: #888888;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.show-thinking:hover {
+  color: #ffffff;
+}
+
+/* Results Table */
+.results-table {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px 80px;
+  gap: 24px;
+  padding: 16px 24px;
+  background: #2a2a2a;
+  border-bottom: 1px solid #333333;
+}
+
+.column-header {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.result-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px 80px;
+  gap: 24px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #2a2a2a;
+  transition: background-color 0.2s;
+}
+
+.result-row:hover {
+  background: #252525;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.person-info {
+  display: flex;
+  gap: 16px;
+}
+
+.person-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 48px;
+  height: 48px;
+  background: #333333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.activity-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: #00ff88;
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+}
+
+.person-details {
+  flex: 1;
+}
+
+.person-name {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.person-school {
+  color: #888888;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.person-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bullet-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.bullet {
+  color: #00ff88;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ai-summary {
+  background: rgba(0, 255, 136, 0.1);
+  border-left: 2px solid #00ff88;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+}
+
+.person-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.score-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333333;
+}
+
+.score-dot.active {
+  background: #00ff88;
+}
+
+.person-quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+}
+
+.person-mutuals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mutual-avatar {
+  width: 32px;
+  height: 32px;
+  background: #333333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Loading and Empty States */
+.loading-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #333333;
+  border-top: 3px solid #00ff88;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888888;
+}
+
+.new-search-btn {
+  background: transparent;
+  border: 1px solid #333333;
+  color: #888888;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 32px;
+  transition: all 0.2s;
+}
+
+.new-search-btn:hover {
+  border-color: #00ff88;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+    gap: 16px;
+  }
+  
+  .nav {
+    order: 3;
+    gap: 16px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .search-input {
+    height: 48px;
+    font-size: 16px;
+  }
+  
+  .role-categories {
+    gap: 12px;
+  }
+  
+  .role-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .table-header,
+  .result-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .person-score,
+  .person-quotes,
+  .person-mutuals {
+    display: none;
+  }
+}

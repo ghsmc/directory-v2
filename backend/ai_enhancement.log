@@ -1,0 +1,885 @@
+2025-06-28 18:46:06,792 - INFO - 🧪 Running in TEST MODE
+2025-06-28 18:46:06,865 - INFO - 🤖 STARTING BATCH AI ENHANCEMENT
+2025-06-28 18:46:06,865 - INFO - ============================================================
+2025-06-28 18:46:06,930 - INFO - 📊 Found 14,412 unprocessed profiles
+2025-06-28 18:46:06,930 - INFO - 🎯 Processing 5 profiles (limited)
+2025-06-28 18:46:06,954 - INFO - 
+🔄 Processing batch of 5 profiles...
+2025-06-28 18:46:08,770 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 18:46:08,799 - INFO - ✅ Enhanced Lyndsi A. S. F. (1 total)
+2025-06-28 18:46:08,799 - INFO -    Summary: Lyndsi A. S. F. is a dedicated student at Yale University, focusing on her academic growth and future contributions to her field.
+2025-06-28 18:46:08,799 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 18:46:09,916 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 18:46:09,921 - INFO - ✅ Enhanced Morena valentina Gomez (2 total)
+2025-06-28 18:46:09,921 - INFO -    Summary: Morena Valentina Gomez is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 18:46:09,922 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 18:46:11,007 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 18:46:11,014 - INFO - ✅ Enhanced yaqswser yasser (3 total)
+2025-06-28 18:46:11,015 - INFO -    Summary: Yaqswser Yasser is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 18:46:11,015 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 18:46:11,982 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 18:46:11,987 - INFO - ✅ Enhanced fsdr A's x (4 total)
+2025-06-28 18:46:11,987 - INFO -    Summary: Dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 18:46:11,987 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 18:46:13,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 18:46:13,224 - INFO - ✅ Enhanced Chucho Martinez Padres (5 total)
+2025-06-28 18:46:13,224 - INFO -    Summary: Chucho Martinez Padres is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 18:46:13,224 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 18:46:13,334 - INFO - 📈 Progress: 5/5 (100.0%)
+2025-06-28 18:46:13,334 - INFO - ⚡ Rate: 0.8 profiles/sec | Errors: 0
+2025-06-28 18:46:14,336 - INFO - 
+🎉 BATCH ENHANCEMENT COMPLETE!
+2025-06-28 18:46:14,336 - INFO - ✅ Successfully processed: 5
+2025-06-28 18:46:14,336 - INFO - ❌ Errors: 0
+2025-06-28 18:46:14,336 - INFO - ⏱️  Total time: 0:00:07.470985
+2025-06-28 18:46:14,336 - INFO - 💰 Estimated cost: $0.00
+2025-06-28 19:48:26,138 - INFO - 🤖 STARTING BATCH AI ENHANCEMENT
+2025-06-28 19:48:26,139 - INFO - ============================================================
+2025-06-28 19:48:26,160 - INFO - 📊 Found 14,407 unprocessed profiles
+2025-06-28 19:48:26,161 - INFO - 🎯 Processing 200 profiles (limited)
+2025-06-28 19:48:26,194 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:48:28,188 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:28,216 - INFO - ✅ Enhanced Eric Elftmann (1 total)
+2025-06-28 19:48:28,216 - INFO -    Summary: Eric Elftmann is a dedicated student at Yale University, actively engaging in his academic pursuits.
+2025-06-28 19:48:28,216 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:29,306 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:29,313 - INFO - ✅ Enhanced lambrianni houliotis (2 total)
+2025-06-28 19:48:29,313 - INFO -    Summary: Lambrianni Houliotis is a dedicated faculty member at Yale University, contributing to academic excellence and research innovation.
+2025-06-28 19:48:29,313 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:30,390 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:30,393 - INFO - ✅ Enhanced maiesha Umair (3 total)
+2025-06-28 19:48:30,394 - INFO -    Summary: Maiesha Umair is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:30,394 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:31,860 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:31,866 - INFO - ✅ Enhanced Brian Cole (4 total)
+2025-06-28 19:48:31,866 - INFO -    Summary: Brian Cole is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:48:31,866 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:48:32,996 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:33,022 - INFO - ✅ Enhanced Edgar Li (5 total)
+2025-06-28 19:48:33,023 - INFO -    Summary: Edgar Li is a faculty member at Yale University specializing in East Asian Studies, contributing to academic discourse and research in the field.
+2025-06-28 19:48:33,023 - INFO -    Tags: ['Faculty', 'Researcher', 'East Asian Studies']
+2025-06-28 19:48:33,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:33,951 - INFO - ✅ Enhanced Almira Almuite (6 total)
+2025-06-28 19:48:33,951 - INFO -    Summary: Almira Almuite is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:33,951 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:34,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:34,951 - INFO - ✅ Enhanced Cecilia Sun (7 total)
+2025-06-28 19:48:34,951 - INFO -    Summary: Cecilia Sun integrates mathematics and humanities at Yale, fostering interdisciplinary scholarship and education.
+2025-06-28 19:48:34,951 - INFO -    Tags: ['Faculty', 'Mathematics', 'Humanities', 'Researcher']
+2025-06-28 19:48:36,069 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:36,079 - INFO - ✅ Enhanced Jamal Woodley (8 total)
+2025-06-28 19:48:36,079 - INFO -    Summary: Jamal Woodley is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:36,080 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:37,154 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:37,168 - INFO - ✅ Enhanced celine rachid (9 total)
+2025-06-28 19:48:37,168 - INFO -    Summary: Celine Rachid is a dedicated student at Yale University, focusing on her academic growth and future contributions.
+2025-06-28 19:48:37,168 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:38,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:38,353 - INFO - ✅ Enhanced Ismail Djibo Idé (10 total)
+2025-06-28 19:48:38,353 - INFO -    Summary: Ismail Djibo Idé is a dedicated faculty member at Yale University, contributing to the field of aviation education.
+2025-06-28 19:48:38,354 - INFO -    Tags: ['Faculty', 'Current Student', 'Researcher']
+2025-06-28 19:48:39,618 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:39,621 - INFO - ✅ Enhanced Kirah Boyd (11 total)
+2025-06-28 19:48:39,622 - INFO -    Summary: Kirah Boyd is a dedicated student at Yale University, actively pursuing her academic passions.
+2025-06-28 19:48:39,622 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:41,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:41,100 - INFO - ✅ Enhanced oshiemele pitylove (12 total)
+2025-06-28 19:48:41,100 - INFO -    Summary: Oshiemele Pitylove is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:48:41,100 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:42,604 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:42,633 - INFO - ✅ Enhanced Alex Cunningham (13 total)
+2025-06-28 19:48:42,633 - INFO -    Summary: Alex Cunningham is a dedicated student at Yale University School of Medicine, focusing on advancing medical knowledge and practice.
+2025-06-28 19:48:42,633 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:48:44,282 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:44,286 - INFO - ✅ Enhanced Nene Mio (14 total)
+2025-06-28 19:48:44,286 - INFO -    Summary: Nene Mio is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:48:44,286 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:45,344 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:45,350 - INFO - ✅ Enhanced Hildana Mekonnen (15 total)
+2025-06-28 19:48:45,350 - INFO -    Summary: Hildana Mekonnen is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:48:45,350 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:46,233 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:46,237 - INFO - ✅ Enhanced Ahmed Ratzharimiad (16 total)
+2025-06-28 19:48:46,237 - INFO -    Summary: Ahmed Ratzharimiad is a dedicated faculty member at Yale University, contributing to academic excellence and research innovation.
+2025-06-28 19:48:46,237 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:47,402 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:47,410 - INFO - ✅ Enhanced Arianna Lestingi (17 total)
+2025-06-28 19:48:47,410 - INFO -    Summary: Arianna Lestingi is a dedicated faculty member at Yale, focusing on public health as part of her MPH program for 2025.
+2025-06-28 19:48:47,410 - INFO -    Tags: ['Faculty', 'Current Student', 'Public Health', 'MPH']
+2025-06-28 19:48:48,207 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:48,210 - INFO - ✅ Enhanced Chris Nunya (18 total)
+2025-06-28 19:48:48,210 - INFO -    Summary: Chris Nunya is a dedicated student at Yale University, actively engaging in academic pursuits and community initiatives.
+2025-06-28 19:48:48,210 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:49,217 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:49,224 - INFO - ✅ Enhanced 朱诚昊 (19 total)
+2025-06-28 19:48:49,224 - INFO -    Summary: 朱诚昊 is a dedicated PhD student at Yale University, focusing on advancing research in his field.
+2025-06-28 19:48:49,224 - INFO -    Tags: ['PhD Student', 'Current Student']
+2025-06-28 19:48:50,203 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:50,208 - INFO - ✅ Enhanced MeiLan Haberl (20 total)
+2025-06-28 19:48:50,208 - INFO -    Summary: MeiLan Haberl is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:48:50,208 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:50,308 - INFO - 📈 Progress: 20/200 (10.0%)
+2025-06-28 19:48:50,308 - INFO - ⚡ Rate: 0.8 profiles/sec | Errors: 0
+2025-06-28 19:48:51,339 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:48:52,560 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:52,565 - INFO - ✅ Enhanced Spiro Reda (21 total)
+2025-06-28 19:48:52,565 - INFO -    Summary: Spiro Reda is a dedicated graduate student at Yale University, specializing in advanced physics research.
+2025-06-28 19:48:52,565 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Physics']
+2025-06-28 19:48:53,586 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:53,591 - INFO - ✅ Enhanced Matthew Tran (22 total)
+2025-06-28 19:48:53,592 - INFO -    Summary: Matthew Tran explores the intersection of economics and religious studies at Yale, enriching academic discourse and research.
+2025-06-28 19:48:53,592 - INFO -    Tags: ['Faculty', 'Economics', 'Religious Studies']
+2025-06-28 19:48:54,559 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:54,562 - INFO - ✅ Enhanced juciene reis (23 total)
+2025-06-28 19:48:54,563 - INFO -    Summary: Juciene Reis is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:54,563 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:55,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:55,517 - INFO - ✅ Enhanced Edward Prein (24 total)
+2025-06-28 19:48:55,517 - INFO -    Summary: Edward Prein is a dedicated J.D. candidate at Yale Law School, focusing on legal scholarship and advocacy.
+2025-06-28 19:48:55,517 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale Law School']
+2025-06-28 19:48:56,839 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:56,847 - INFO - ✅ Enhanced ciara dani (25 total)
+2025-06-28 19:48:56,847 - INFO -    Summary: Ciara Dani is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:56,847 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:57,826 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:57,831 - INFO - ✅ Enhanced carmel Niyongabo (26 total)
+2025-06-28 19:48:57,832 - INFO -    Summary: Carmel Niyongabo is a dedicated faculty member at Yale University, contributing to military education and leadership development.
+2025-06-28 19:48:57,832 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:48:58,758 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:58,764 - INFO - ✅ Enhanced Ezana Tedla (27 total)
+2025-06-28 19:48:58,764 - INFO -    Summary: Ezana Tedla is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:48:58,764 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:48:59,644 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:48:59,649 - INFO - ✅ Enhanced Adeline Clavie (28 total)
+2025-06-28 19:48:59,650 - INFO -    Summary: Adeline Clavie is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:48:59,650 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:00,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:00,654 - INFO - ✅ Enhanced Nick Knack (29 total)
+2025-06-28 19:49:00,654 - INFO -    Summary: Nick Knack is a dedicated student at Yale University, actively engaging in his academic pursuits.
+2025-06-28 19:49:00,654 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:02,755 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:02,769 - INFO - ✅ Enhanced Giorgio Eugenio Oscare Giacaglia (30 total)
+2025-06-28 19:49:02,769 - INFO -    Summary: Giorgio Eugenio Oscare Giacaglia is a PhD student at Yale University specializing in celestial mechanics.
+2025-06-28 19:49:02,769 - INFO -    Tags: ['PhD Student', 'Current Student', 'Researcher', 'Physics']
+2025-06-28 19:49:03,989 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:03,993 - INFO - ✅ Enhanced Arnold Driebergen (31 total)
+2025-06-28 19:49:03,993 - INFO -    Summary: Arnold Driebergen is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:49:03,993 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:05,001 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:05,005 - INFO - ✅ Enhanced Chris McGovern (32 total)
+2025-06-28 19:49:05,006 - INFO -    Summary: Chris McGovern is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:49:05,006 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:49:06,016 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:06,018 - INFO - ✅ Enhanced Priscilla Ehrgood (33 total)
+2025-06-28 19:49:06,018 - INFO -    Summary: Priscilla Ehrgood is an AI Tutor at xAI, leveraging her MA in Linguistics from Yale to advance language technology.
+2025-06-28 19:49:06,018 - INFO -    Tags: ['Faculty', 'Researcher', 'Current Student', 'Linguistics', 'AI']
+2025-06-28 19:49:07,156 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:07,159 - INFO - ✅ Enhanced SOKNY ONN (34 total)
+2025-06-28 19:49:07,159 - INFO -    Summary: Sokny Onn is a Yale World Fellow and CEO dedicated to advancing disability inclusion through arts and education.
+2025-06-28 19:49:07,159 - INFO -    Tags: ['Faculty', 'Researcher', 'Social Entrepreneur', 'Current Student']
+2025-06-28 19:49:08,090 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:08,092 - INFO - ✅ Enhanced David Demarque (35 total)
+2025-06-28 19:49:08,093 - INFO -    Summary: David Demarque is a faculty member at Yale University, contributing to academic excellence and innovation in his field.
+2025-06-28 19:49:08,093 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:09,156 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:09,160 - INFO - ✅ Enhanced claire chace (36 total)
+2025-06-28 19:49:09,160 - INFO -    Summary: Claire Chace is a dedicated student at Yale University, focused on her academic pursuits and future contributions.
+2025-06-28 19:49:09,160 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:10,204 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:10,208 - INFO - ✅ Enhanced Cooper Slaughter (37 total)
+2025-06-28 19:49:10,208 - INFO -    Summary: Cooper Slaughter is an engaged student at Yale University, focusing on academic excellence and community involvement.
+2025-06-28 19:49:10,208 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:11,269 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:11,279 - INFO - ✅ Enhanced clena ford (38 total)
+2025-06-28 19:49:11,279 - INFO -    Summary: Clena Ford is a faculty member at Yale University School of Medicine, contributing to advancements in medical education and research.
+2025-06-28 19:49:11,279 - INFO -    Tags: ['Faculty', 'Medicine', 'Yale University', 'Researcher']
+2025-06-28 19:49:12,237 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:12,240 - INFO - ✅ Enhanced McKay Nield (39 total)
+2025-06-28 19:49:12,240 - INFO -    Summary: McKay Nield is a dedicated student at Yale University, actively engaging in academic pursuits and campus life.
+2025-06-28 19:49:12,240 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:13,233 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:13,238 - INFO - ✅ Enhanced rosa luxembourg (40 total)
+2025-06-28 19:49:13,239 - INFO -    Summary: Rosa Luxembourg is a dedicated student at Yale University, focusing on her academic journey and future contributions.
+2025-06-28 19:49:13,239 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:13,339 - INFO - 📈 Progress: 40/200 (20.0%)
+2025-06-28 19:49:13,340 - INFO - ⚡ Rate: 0.8 profiles/sec | Errors: 0
+2025-06-28 19:49:14,384 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:49:15,421 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:15,423 - INFO - ✅ Enhanced Ethan Carpenter (41 total)
+2025-06-28 19:49:15,423 - INFO -    Summary: Ethan Carpenter is a dedicated student at Yale University, actively engaged in his academic pursuits.
+2025-06-28 19:49:15,423 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:16,460 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:16,468 - INFO - ✅ Enhanced Robert Skarlatos (42 total)
+2025-06-28 19:49:16,468 - INFO -    Summary: Robert Skarlatos is a dedicated student at Yale University, focused on advancing his academic journey.
+2025-06-28 19:49:16,468 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:17,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:17,438 - INFO - ✅ Enhanced Julia D’Alessandro (43 total)
+2025-06-28 19:49:17,439 - INFO -    Summary: Julia D’Alessandro is a dedicated student at Yale University, actively pursuing her academic passions.
+2025-06-28 19:49:17,439 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:18,759 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:18,763 - INFO - ✅ Enhanced Emilie Zhao (44 total)
+2025-06-28 19:49:18,763 - INFO -    Summary: Emilie Zhao specializes in sustainable investing strategies at Yale-NUS College, integrating philosophy, politics, and economics.
+2025-06-28 19:49:18,763 - INFO -    Tags: ['Faculty', 'Researcher', 'Economics', 'Business', 'Current Student']
+2025-06-28 19:49:19,720 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:19,732 - INFO - ✅ Enhanced Rene Wise (45 total)
+2025-06-28 19:49:19,732 - INFO -    Summary: Rene Wise is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:49:19,732 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:20,620 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:20,623 - INFO - ✅ Enhanced Katiana Romain (46 total)
+2025-06-28 19:49:20,623 - INFO -    Summary: Katiana Romain is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:49:20,623 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:21,582 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:21,587 - INFO - ✅ Enhanced ေမင့္ခ်စ္ သူ (47 total)
+2025-06-28 19:49:21,587 - INFO -    Summary: A dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:49:21,587 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:22,703 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:22,708 - INFO - ✅ Enhanced Himusaki Start undefined (48 total)
+2025-06-28 19:49:22,708 - INFO -    Summary: Himusaki Start is a dedicated student at Yale University, actively pursuing academic excellence and engagement in campus life.
+2025-06-28 19:49:22,708 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:24,164 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:24,175 - INFO - ✅ Enhanced Jessica Grimes (49 total)
+2025-06-28 19:49:24,175 - INFO -    Summary: Jessica Grimes is a dedicated student at Yale University, focusing on her academic growth and future contributions to her field.
+2025-06-28 19:49:24,175 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:25,221 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:25,228 - INFO - ✅ Enhanced Lily Muugii (50 total)
+2025-06-28 19:49:25,228 - INFO -    Summary: Lily Muugii is a dedicated student at Yale School of Management, focusing on innovative business strategies.
+2025-06-28 19:49:25,228 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Business Student']
+2025-06-28 19:49:26,309 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:26,313 - INFO - ✅ Enhanced Aniyah White (51 total)
+2025-06-28 19:49:26,313 - INFO -    Summary: Aniyah White, a Questbridge Scholar at Yale University, is dedicated to academic excellence and community engagement.
+2025-06-28 19:49:26,313 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Yale University', 'Questbridge Scholar']
+2025-06-28 19:49:27,278 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:27,287 - INFO - ✅ Enhanced Camille Chang (52 total)
+2025-06-28 19:49:27,287 - INFO -    Summary: Camille Chang is a dedicated Art History student at Yale University, exploring the intersections of art and culture.
+2025-06-28 19:49:27,287 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Art History']
+2025-06-28 19:49:28,298 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:28,302 - INFO - ✅ Enhanced Sarah Lee (53 total)
+2025-06-28 19:49:28,302 - INFO -    Summary: Sarah Lee is a dedicated student at Yale University, focusing on her academic growth and future contributions to her field.
+2025-06-28 19:49:28,302 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:29,242 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:29,248 - INFO - ✅ Enhanced Yeet Yoloswagness (54 total)
+2025-06-28 19:49:29,248 - INFO -    Summary: Yeet Yoloswagness is a dedicated student at Yale University, actively pursuing academic excellence.
+2025-06-28 19:49:29,248 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:30,218 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:30,224 - INFO - ✅ Enhanced Modelame M (55 total)
+2025-06-28 19:49:30,224 - INFO -    Summary: Modelame M is a dedicated student at Yale University, actively engaging in academic pursuits and community initiatives.
+2025-06-28 19:49:30,224 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:31,251 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:31,257 - INFO - ✅ Enhanced Matt Wilson (56 total)
+2025-06-28 19:49:31,257 - INFO -    Summary: Matt Wilson is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:49:31,258 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:49:32,703 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:32,707 - INFO - ✅ Enhanced Lewis Blackburn (57 total)
+2025-06-28 19:49:32,707 - INFO -    Summary: Lewis Blackburn is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:49:32,707 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:33,783 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:33,786 - INFO - ✅ Enhanced Rick Johnsin (58 total)
+2025-06-28 19:49:33,787 - INFO -    Summary: Rick Johnsin is a dedicated student at Yale University, actively engaging in his academic pursuits.
+2025-06-28 19:49:33,787 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:34,905 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:34,912 - INFO - ✅ Enhanced briana berlin (59 total)
+2025-06-28 19:49:34,912 - INFO -    Summary: Briana Berlin is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:49:34,912 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:49:35,854 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:35,859 - INFO - ✅ Enhanced Stanley Gakungu (60 total)
+2025-06-28 19:49:35,859 - INFO -    Summary: Stanley Gakungu is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:49:35,859 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:35,964 - INFO - 📈 Progress: 60/200 (30.0%)
+2025-06-28 19:49:35,964 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:49:36,993 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:49:37,989 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:37,992 - INFO - ✅ Enhanced Jamar Williams (61 total)
+2025-06-28 19:49:37,992 - INFO -    Summary: Jamar Williams is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:49:37,992 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:38,950 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:38,953 - INFO - ✅ Enhanced Shane Rachel (62 total)
+2025-06-28 19:49:38,953 - INFO -    Summary: Shane Rachel is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:49:38,953 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:39,819 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:39,821 - INFO - ✅ Enhanced Eli Hadad (63 total)
+2025-06-28 19:49:39,822 - INFO -    Summary: Eli Hadad is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:49:39,822 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:40,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:40,805 - INFO - ✅ Enhanced Elle Lucas (64 total)
+2025-06-28 19:49:40,806 - INFO -    Summary: Elle Lucas is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:49:40,806 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:41,815 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:41,819 - INFO - ✅ Enhanced Jessica Jones (65 total)
+2025-06-28 19:49:41,819 - INFO -    Summary: Jessica Jones is a dedicated student at Yale University, actively pursuing her academic goals and engaging in campus life.
+2025-06-28 19:49:41,820 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:42,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:42,949 - INFO - ✅ Enhanced Pidi Pidol (66 total)
+2025-06-28 19:49:42,949 - INFO -    Summary: Pidi Pidol is a dedicated faculty member at Yale Law School, focusing on legal education and advocacy.
+2025-06-28 19:49:42,949 - INFO -    Tags: ['Faculty', 'Law', 'Current Student']
+2025-06-28 19:49:43,957 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:43,960 - INFO - ✅ Enhanced gloria estefania coronel ortiz (67 total)
+2025-06-28 19:49:43,960 - INFO -    Summary: Gloria Estefania Coronel Ortiz is a faculty member at Yale University, specializing in the arts and design education.
+2025-06-28 19:49:43,960 - INFO -    Tags: ['Faculty', 'Current Student', 'Art', 'Design']
+2025-06-28 19:49:44,814 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:44,818 - INFO - ✅ Enhanced carl vens (68 total)
+2025-06-28 19:49:44,818 - INFO -    Summary: Carl Vens is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:49:44,818 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:45,856 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:45,860 - INFO - ✅ Enhanced Luke James (69 total)
+2025-06-28 19:49:45,860 - INFO -    Summary: Luke James is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:49:45,860 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:46,784 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:46,787 - INFO - ✅ Enhanced Bob Bradley (70 total)
+2025-06-28 19:49:46,788 - INFO -    Summary: Bob Bradley is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:49:46,788 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:47,632 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:47,638 - INFO - ✅ Enhanced Lisa Bettermen (71 total)
+2025-06-28 19:49:47,638 - INFO -    Summary: Lisa Bettermen is a dedicated faculty member at Yale University, contributing to academic excellence and innovative research.
+2025-06-28 19:49:47,638 - INFO -    Tags: ['Faculty', 'Current Student', 'Researcher']
+2025-06-28 19:49:48,591 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:48,595 - INFO - ✅ Enhanced Jim Baker (72 total)
+2025-06-28 19:49:48,595 - INFO -    Summary: Jim Baker is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:49:48,595 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:49:49,567 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:49,571 - INFO - ✅ Enhanced Ame P (73 total)
+2025-06-28 19:49:49,571 - INFO -    Summary: Ame P is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:49:49,571 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:50,623 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:50,627 - INFO - ✅ Enhanced Mathis Blanchy (74 total)
+2025-06-28 19:49:50,627 - INFO -    Summary: Mathis Blanchy is a dedicated faculty member at Yale University, contributing to academic excellence and student development.
+2025-06-28 19:49:50,627 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:51,748 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:51,754 - INFO - ✅ Enhanced Sabrina Soriano (75 total)
+2025-06-28 19:49:51,754 - INFO -    Summary: Sabrina Soriano is a faculty member at Yale, specializing in Psychology and Statistics & Data Science.
+2025-06-28 19:49:51,754 - INFO -    Tags: ['Faculty', 'Researcher', 'Psychology', 'Data Science']
+2025-06-28 19:49:52,656 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:52,660 - INFO - ✅ Enhanced greg greg (76 total)
+2025-06-28 19:49:52,660 - INFO -    Summary: Greg Greg is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:49:52,660 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:53,597 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:53,600 - INFO - ✅ Enhanced Min Khant (77 total)
+2025-06-28 19:49:53,600 - INFO -    Summary: Min Khant is a dedicated student at Yale University School of Medicine, focusing on advancing medical knowledge and practice.
+2025-06-28 19:49:53,600 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:49:55,015 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:55,018 - INFO - ✅ Enhanced Parag solanki Solanki (78 total)
+2025-06-28 19:49:55,018 - INFO -    Summary: Parag Solanki is a faculty member at Yale Divinity School, dedicated to advancing theological education and scholarship.
+2025-06-28 19:49:55,018 - INFO -    Tags: ['Faculty', 'Current Student', 'Divinity', 'Theology']
+2025-06-28 19:49:55,782 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:55,786 - INFO - ✅ Enhanced Jon Brad (79 total)
+2025-06-28 19:49:55,786 - INFO -    Summary: Jon Brad is a dedicated student at Yale University, focusing on his academic pursuits and personal growth.
+2025-06-28 19:49:55,786 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:56,760 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:56,765 - INFO - ✅ Enhanced Jared Schear (80 total)
+2025-06-28 19:49:56,765 - INFO -    Summary: Jared Schear is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:49:56,765 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:49:56,869 - INFO - 📈 Progress: 80/200 (40.0%)
+2025-06-28 19:49:56,869 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:49:57,907 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:49:58,758 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:58,761 - INFO - ✅ Enhanced Amani Hill (81 total)
+2025-06-28 19:49:58,761 - INFO -    Summary: Amani Hill is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:49:58,761 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:49:59,731 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:49:59,737 - INFO - ✅ Enhanced cel ave (82 total)
+2025-06-28 19:49:59,737 - INFO -    Summary: Cel Ave is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:49:59,737 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:00,741 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:00,745 - INFO - ✅ Enhanced M C cam (83 total)
+2025-06-28 19:50:00,746 - INFO -    Summary: M C cam is a dedicated student at Yale University, actively engaging in academic pursuits and community initiatives.
+2025-06-28 19:50:00,746 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:01,750 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:01,754 - INFO - ✅ Enhanced Ștefana Tanasă (84 total)
+2025-06-28 19:50:01,754 - INFO -    Summary: Ștefana Tanasă is a dedicated faculty member at Yale University, contributing to academic excellence and research innovation.
+2025-06-28 19:50:01,754 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:02,540 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:02,549 - INFO - ✅ Enhanced Ryan Boylan (85 total)
+2025-06-28 19:50:02,549 - INFO -    Summary: Ryan Boylan is a dedicated faculty member at Yale University, contributing to academic excellence and innovative research.
+2025-06-28 19:50:02,549 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:03,543 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:03,547 - INFO - ✅ Enhanced Mike Paulini (86 total)
+2025-06-28 19:50:03,547 - INFO -    Summary: Mike Paulini is a dedicated student at Yale University, focusing on his academic and professional growth.
+2025-06-28 19:50:03,547 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:04,801 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:04,807 - INFO - ✅ Enhanced francesca lodo (87 total)
+2025-06-28 19:50:04,807 - INFO -    Summary: Francesca Lodo is a dedicated student at Yale, currently honing her artistic skills at the Académie royale des Beaux-Arts de Bruxelles.
+2025-06-28 19:50:04,807 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Art']
+2025-06-28 19:50:06,373 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:06,381 - INFO - ✅ Enhanced krystal wakefield (88 total)
+2025-06-28 19:50:06,381 - INFO -    Summary: Krystal Wakefield is a dedicated student at Yale University, focused on her academic journey and future contributions.
+2025-06-28 19:50:06,381 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:07,315 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:07,318 - INFO - ✅ Enhanced jason crooger (89 total)
+2025-06-28 19:50:07,318 - INFO -    Summary: Jason Crooger is a dedicated student at Yale University, actively engaging in his academic pursuits.
+2025-06-28 19:50:07,318 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:08,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:08,216 - INFO - ✅ Enhanced shauna pearlman (90 total)
+2025-06-28 19:50:08,216 - INFO -    Summary: Shauna Pearlman is a dedicated student at Yale University, actively pursuing her academic and professional goals.
+2025-06-28 19:50:08,216 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:09,136 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:09,138 - INFO - ✅ Enhanced Carter Schubert (91 total)
+2025-06-28 19:50:09,139 - INFO -    Summary: Carter Schubert is a dedicated student at Yale University, actively engaging in high school academics and extracurriculars.
+2025-06-28 19:50:09,139 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:10,141 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:10,154 - INFO - ✅ Enhanced Aarush Pathuri (92 total)
+2025-06-28 19:50:10,154 - INFO -    Summary: Aarush Pathuri is a dedicated student at Yale University, focused on academic excellence and interdisciplinary learning.
+2025-06-28 19:50:10,154 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:11,122 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:11,138 - INFO - ✅ Enhanced Vincenzo Di Roberto (93 total)
+2025-06-28 19:50:11,138 - INFO -    Summary: Vincenzo Di Roberto is a dedicated student at Yale University, actively engaging in his academic pursuits.
+2025-06-28 19:50:11,138 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:12,428 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:12,433 - INFO - ✅ Enhanced Jiangnan Yi (94 total)
+2025-06-28 19:50:12,433 - INFO -    Summary: Jiangnan Yi, a faculty member at Yale, specializes in biostatistics with an MPH from the class of 2022.
+2025-06-28 19:50:12,433 - INFO -    Tags: ['Faculty', 'Researcher', 'Public Health', 'Biostatistics']
+2025-06-28 19:50:13,398 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:13,401 - INFO - ✅ Enhanced kalied birizi (95 total)
+2025-06-28 19:50:13,401 - INFO -    Summary: Kalied Birizi is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:50:13,401 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:14,407 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:14,412 - INFO - ✅ Enhanced Ha Vo (96 total)
+2025-06-28 19:50:14,412 - INFO -    Summary: Ha Vo is an MPH candidate at Yale School of Public Health, focusing on advancing public health initiatives.
+2025-06-28 19:50:14,412 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Public Health']
+2025-06-28 19:50:15,353 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:15,365 - INFO - ✅ Enhanced Lovely Rose (97 total)
+2025-06-28 19:50:15,366 - INFO -    Summary: Lovely Rose is a faculty member at Yale University, specializing in beauty and aesthetics education.
+2025-06-28 19:50:15,366 - INFO -    Tags: ['Faculty', 'Current Student', 'Beauty']
+2025-06-28 19:50:16,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:16,458 - INFO - ✅ Enhanced Gregory Page (98 total)
+2025-06-28 19:50:16,458 - INFO -    Summary: Gregory Page is a distinguished faculty member at Yale, leveraging his extensive legal experience in environmental law to educate future leaders.
+2025-06-28 19:50:16,458 - INFO -    Tags: ['Faculty', 'Law', 'Current Student', 'Environmental Law']
+2025-06-28 19:50:17,651 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:17,659 - INFO - ✅ Enhanced Sumner M. (99 total)
+2025-06-28 19:50:17,659 - INFO -    Summary: Sumner M. is a Postdoctoral Fellow at Yale University, focusing on innovative research in their field of expertise.
+2025-06-28 19:50:17,659 - INFO -    Tags: ['Postdoc', 'Researcher', 'Faculty']
+2025-06-28 19:50:18,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:18,699 - INFO - ✅ Enhanced Anastasia Rubio (100 total)
+2025-06-28 19:50:18,699 - INFO -    Summary: Anastasia Rubio is a Master's candidate at Yale, specializing in urban ecology and industrial hygiene within environmental science.
+2025-06-28 19:50:18,699 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Environmental Science', 'Researcher']
+2025-06-28 19:50:18,804 - INFO - 📈 Progress: 100/200 (50.0%)
+2025-06-28 19:50:18,804 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:50:19,837 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:50:20,639 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:20,642 - INFO - ✅ Enhanced eliud escobar (101 total)
+2025-06-28 19:50:20,642 - INFO -    Summary: Eliud Escobar is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:20,642 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:21,697 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:21,702 - INFO - ✅ Enhanced Ibraheim Ayub (102 total)
+2025-06-28 19:50:21,703 - INFO -    Summary: Ibraheim Ayub is a PGY-1 resident at Yale-Waterbury, focusing on internal medicine and advancing patient care.
+2025-06-28 19:50:21,703 - INFO -    Tags: ['Medical Student', 'Current Student', 'Faculty', 'Medicine']
+2025-06-28 19:50:22,731 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:22,736 - INFO - ✅ Enhanced Dale Gaylor (103 total)
+2025-06-28 19:50:22,736 - INFO -    Summary: Dale Gaylor is a dedicated student at Yale University, actively engaging in academic pursuits and community initiatives.
+2025-06-28 19:50:22,736 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:23,695 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:23,703 - INFO - ✅ Enhanced Donald Chandler (104 total)
+2025-06-28 19:50:23,703 - INFO -    Summary: Donald Chandler is a dedicated faculty member at Yale Law School, contributing to legal education and scholarship.
+2025-06-28 19:50:23,703 - INFO -    Tags: ['Faculty', 'Law', 'Current Student']
+2025-06-28 19:50:25,211 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:25,218 - INFO - ✅ Enhanced Melissa Bergen (105 total)
+2025-06-28 19:50:25,218 - INFO -    Summary: Melissa Bergen is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:50:25,218 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:26,190 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:26,193 - INFO - ✅ Enhanced Lena Henkel (106 total)
+2025-06-28 19:50:26,193 - INFO -    Summary: Lena Henkel is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:26,193 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:27,305 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:27,309 - INFO - ✅ Enhanced Bing Tian (107 total)
+2025-06-28 19:50:27,309 - INFO -    Summary: Bing Tian is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:27,309 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:28,229 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:28,233 - INFO - ✅ Enhanced Bailey Johnston (108 total)
+2025-06-28 19:50:28,233 - INFO -    Summary: Bailey Johnston is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:28,233 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:29,165 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:29,168 - INFO - ✅ Enhanced southmp3 free (109 total)
+2025-06-28 19:50:29,168 - INFO -    Summary: Dedicated student at Yale School of Music, honing skills in performance and composition.
+2025-06-28 19:50:29,168 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Music']
+2025-06-28 19:50:30,385 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:30,390 - INFO - ✅ Enhanced Saturday Nite (110 total)
+2025-06-28 19:50:30,390 - INFO -    Summary: Saturday Nite is a dedicated student at Yale University School of Medicine, focusing on advancing medical knowledge and practice.
+2025-06-28 19:50:30,390 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:50:31,447 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:31,450 - INFO - ✅ Enhanced Karlito Hodo (111 total)
+2025-06-28 19:50:31,450 - INFO -    Summary: Karlito Hodo is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:31,451 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:32,656 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:32,663 - INFO - ✅ Enhanced Erick T. (112 total)
+2025-06-28 19:50:32,664 - INFO -    Summary: Erick T. is a rising senior at Yale University, dedicated to advancing knowledge in his field through innovative research.
+2025-06-28 19:50:32,664 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Researcher']
+2025-06-28 19:50:33,732 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:33,739 - INFO - ✅ Enhanced frank mayor (113 total)
+2025-06-28 19:50:33,740 - INFO -    Summary: Frank Mayor is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:50:33,740 - INFO -    Tags: ['Faculty', 'Current Student', 'Yale University']
+2025-06-28 19:50:34,778 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:34,785 - INFO - ✅ Enhanced Brittney Taylor (114 total)
+2025-06-28 19:50:34,785 - INFO -    Summary: Brittney Taylor is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:34,785 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:35,985 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:35,992 - INFO - ✅ Enhanced Dude No (115 total)
+2025-06-28 19:50:35,992 - INFO -    Summary: Dude No is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:50:35,992 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:37,589 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:37,596 - INFO - ✅ Enhanced Lucy Bentley (116 total)
+2025-06-28 19:50:37,596 - INFO -    Summary: Lucy Bentley is a dedicated student at Yale University School of Medicine, focusing on advancing her medical education and practice.
+2025-06-28 19:50:37,596 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:50:38,631 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:38,635 - INFO - ✅ Enhanced David L. (117 total)
+2025-06-28 19:50:38,635 - INFO -    Summary: David L. is a faculty member at Yale University specializing in Statistics, advancing research and education in the field.
+2025-06-28 19:50:38,635 - INFO -    Tags: ['Faculty', 'Researcher', 'Statistics']
+2025-06-28 19:50:39,598 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:39,601 - INFO - ✅ Enhanced Muhammad Ibrahim (118 total)
+2025-06-28 19:50:39,601 - INFO -    Summary: Muhammad Ibrahim is a faculty member at Yale University, leveraging his experience from Oxford Royale Academy to enrich academic discourse.
+2025-06-28 19:50:39,601 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:40,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:40,534 - INFO - ✅ Enhanced arianna polanco (119 total)
+2025-06-28 19:50:40,534 - INFO -    Summary: Arianna Polanco is a dedicated student at Yale School of Management, focusing on innovative business solutions.
+2025-06-28 19:50:40,534 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Business Student']
+2025-06-28 19:50:41,496 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:41,517 - INFO - ✅ Enhanced Mengwen Shi (120 total)
+2025-06-28 19:50:41,520 - INFO -    Summary: Mengwen Shi is a dedicated student at Yale University, actively pursuing academic excellence and engagement in campus life.
+2025-06-28 19:50:41,521 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:41,627 - INFO - 📈 Progress: 120/200 (60.0%)
+2025-06-28 19:50:41,627 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:50:42,666 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:50:43,566 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:43,573 - INFO - ✅ Enhanced Faith Zamble (121 total)
+2025-06-28 19:50:43,573 - INFO -    Summary: Faith Zamble is a dedicated student at Yale University, actively engaging in her academic pursuits.
+2025-06-28 19:50:43,573 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:44,540 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:44,546 - INFO - ✅ Enhanced Jayashish Chate (122 total)
+2025-06-28 19:50:44,546 - INFO -    Summary: Jayashish Chate is a dedicated student at Royale Business School, focusing on innovative business strategies.
+2025-06-28 19:50:44,546 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Business Student']
+2025-06-28 19:50:45,435 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:45,442 - INFO - ✅ Enhanced zelda hackenburg (123 total)
+2025-06-28 19:50:45,442 - INFO -    Summary: Zelda Hakenburg is a dedicated student at Yale University, actively pursuing her academic goals.
+2025-06-28 19:50:45,442 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:46,364 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:46,368 - INFO - ✅ Enhanced Lisa Marie (124 total)
+2025-06-28 19:50:46,368 - INFO -    Summary: Lisa Marie is a dedicated student at Yale University, focusing on her academic growth and future career opportunities.
+2025-06-28 19:50:46,368 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:47,592 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:47,595 - INFO - ✅ Enhanced Rhys Baker (125 total)
+2025-06-28 19:50:47,596 - INFO -    Summary: Rhys Baker is a dedicated medical student at Yale University, focused on becoming a neurologist.
+2025-06-28 19:50:47,596 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:50:48,513 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:48,516 - INFO - ✅ Enhanced Nick Miller (126 total)
+2025-06-28 19:50:48,516 - INFO -    Summary: Nick Miller is an engaged student at Yale University, focused on academic excellence and community involvement.
+2025-06-28 19:50:48,516 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:49,299 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:49,302 - INFO - ✅ Enhanced Ella Kraft (127 total)
+2025-06-28 19:50:49,302 - INFO -    Summary: Ella Kraft is a dedicated student at Yale University, focusing on her academic growth and future career aspirations.
+2025-06-28 19:50:49,302 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:50,322 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:50,326 - INFO - ✅ Enhanced yellow human (128 total)
+2025-06-28 19:50:50,326 - INFO -    Summary: Dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:50:50,326 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:51,338 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:51,342 - INFO - ✅ Enhanced Chenda Rivera (129 total)
+2025-06-28 19:50:51,342 - INFO -    Summary: Chenda Rivera is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:51,342 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:52,479 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:52,485 - INFO - ✅ Enhanced Aksh A (130 total)
+2025-06-28 19:50:52,485 - INFO -    Summary: Aksh A is a dedicated student at Yale University, actively pursuing academic excellence and engagement within the Yale community.
+2025-06-28 19:50:52,485 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:53,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:53,449 - INFO - ✅ Enhanced Annie Welch (131 total)
+2025-06-28 19:50:53,449 - INFO -    Summary: Annie Welch is a senior in Yale's undergraduate architecture program, focusing on innovative design and sustainable practices.
+2025-06-28 19:50:53,449 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Architecture']
+2025-06-28 19:50:54,380 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:54,384 - INFO - ✅ Enhanced Goo Boy (132 total)
+2025-06-28 19:50:54,384 - INFO -    Summary: Goo Boy is a dedicated student at Yale University, actively engaging in academic pursuits and campus life.
+2025-06-28 19:50:54,384 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:56,437 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:56,442 - INFO - ✅ Enhanced PYASA DIL (133 total)
+2025-06-28 19:50:56,442 - INFO -    Summary: Pyasa Dil is a faculty member at Yale University, bringing insights from their experience at Oxford Royale Academy.
+2025-06-28 19:50:56,442 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:57,459 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:57,463 - INFO - ✅ Enhanced Kassy Chong (134 total)
+2025-06-28 19:50:57,463 - INFO -    Summary: Kassy Chong is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:50:57,463 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:50:58,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:58,445 - INFO - ✅ Enhanced crystal Mocklinginka (135 total)
+2025-06-28 19:50:58,445 - INFO -    Summary: Crystal Mocklinginka is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:50:58,445 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:50:59,416 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:50:59,419 - INFO - ✅ Enhanced Zairelit Claudio (136 total)
+2025-06-28 19:50:59,420 - INFO -    Summary: Zairelit Claudio is a Diagnostic Medical Sonographer at Yale New Haven Hospital, specializing in advanced imaging techniques.
+2025-06-28 19:50:59,420 - INFO -    Tags: ['Faculty', 'Medicine', 'Current Student']
+2025-06-28 19:51:00,270 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:00,276 - INFO - ✅ Enhanced Richter Abend (137 total)
+2025-06-28 19:51:00,276 - INFO -    Summary: Richter Abend is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:00,276 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:01,259 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:01,262 - INFO - ✅ Enhanced Isabelle Millman (138 total)
+2025-06-28 19:51:01,262 - INFO -    Summary: Isabelle Millman is a second-year Computer Science major at Yale College, focusing on innovative tech solutions.
+2025-06-28 19:51:01,262 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Computer Science']
+2025-06-28 19:51:02,529 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:02,534 - INFO - ✅ Enhanced Khun La Min Htwe (139 total)
+2025-06-28 19:51:02,534 - INFO -    Summary: Khun La Min Htwe is a dedicated student at Yale University School of Medicine, focusing on advancing medical knowledge and practice.
+2025-06-28 19:51:02,534 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:51:03,520 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:03,530 - INFO - ✅ Enhanced Jake Siesel (140 total)
+2025-06-28 19:51:03,530 - INFO -    Summary: Jake Siesel is a dedicated student at Yale University, focusing on his academic pursuits and future career development.
+2025-06-28 19:51:03,530 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:03,635 - INFO - 📈 Progress: 140/200 (70.0%)
+2025-06-28 19:51:03,635 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:51:04,674 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:51:05,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:05,621 - INFO - ✅ Enhanced Dil Shah (141 total)
+2025-06-28 19:51:05,621 - INFO -    Summary: Dil Shah is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:51:05,621 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:06,655 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:06,659 - INFO - ✅ Enhanced Gregory Williams (142 total)
+2025-06-28 19:51:06,659 - INFO -    Summary: Gregory Williams is a dedicated student at Yale Divinity School, focusing on theological studies and community engagement.
+2025-06-28 19:51:06,659 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Divinity', 'Theology']
+2025-06-28 19:51:07,901 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:07,903 - INFO - ✅ Enhanced Changran Liu (143 total)
+2025-06-28 19:51:07,903 - INFO -    Summary: Changran Liu is a faculty member at Yale, focusing on anthropology through the Fox International Fellowship at NUS.
+2025-06-28 19:51:07,903 - INFO -    Tags: ['Faculty', 'Researcher', 'Current Student', 'Anthropology']
+2025-06-28 19:51:08,830 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:08,948 - INFO - ✅ Enhanced Regy Tennion (144 total)
+2025-06-28 19:51:08,948 - INFO -    Summary: Regy Tennion is a dedicated student at Yale University, actively pursuing academic excellence and engagement in campus life.
+2025-06-28 19:51:08,948 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:10,517 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:10,524 - INFO - ✅ Enhanced Bernie Lombard (145 total)
+2025-06-28 19:51:10,524 - INFO -    Summary: Bernie Lombard is a dedicated student at Yale University, actively engaging in academic pursuits and community involvement.
+2025-06-28 19:51:10,524 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:11,664 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:11,668 - INFO - ✅ Enhanced John Wop (146 total)
+2025-06-28 19:51:11,668 - INFO -    Summary: John Wop is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:51:11,668 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:12,641 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:12,649 - INFO - ✅ Enhanced Manon Gilet (147 total)
+2025-06-28 19:51:12,649 - INFO -    Summary: Manon Gilet is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:51:12,649 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:13,527 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:13,555 - INFO - ✅ Enhanced Sofia Severi (148 total)
+2025-06-28 19:51:13,555 - INFO -    Summary: Sofia Severi is a dedicated student at Yale University, focusing on her academic growth and future contributions to her field.
+2025-06-28 19:51:13,555 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:14,610 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:14,613 - INFO - ✅ Enhanced Emy Koo (149 total)
+2025-06-28 19:51:14,613 - INFO -    Summary: Emy Koo is a dedicated student at Yale University, actively pursuing academic excellence and engagement in her field.
+2025-06-28 19:51:14,613 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:16,256 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:16,258 - INFO - ✅ Enhanced Kolja Hildenbrand (150 total)
+2025-06-28 19:51:16,258 - INFO -    Summary: Kolja Hildenbrand is a Fulbright Scholar at Yale, specializing in Molecular Biophysics & Biochemistry with a focus on infectious diseases.
+2025-06-28 19:51:16,258 - INFO -    Tags: ['Faculty', 'Researcher', 'Current Student', 'Medicine', 'Biochemistry']
+2025-06-28 19:51:18,484 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:18,487 - INFO - ✅ Enhanced Slimane LASSAKER (151 total)
+2025-06-28 19:51:18,487 - INFO -    Summary: Slimane Lassaker is a dedicated faculty member at Yale University, contributing to academic excellence and research innovation.
+2025-06-28 19:51:18,487 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:19,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:19,353 - INFO - ✅ Enhanced Maria Teleman (152 total)
+2025-06-28 19:51:19,354 - INFO -    Summary: Maria Teleman is an MArch I candidate at Yale School of Architecture, focusing on innovative design and sustainable practices.
+2025-06-28 19:51:19,354 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Architecture']
+2025-06-28 19:51:20,428 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:20,431 - INFO - ✅ Enhanced Mehmsahib Tara (153 total)
+2025-06-28 19:51:20,431 - INFO -    Summary: Mehmsahib Tara is a dedicated student at Yale Law School, focusing on legal studies and advocacy.
+2025-06-28 19:51:20,431 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale University']
+2025-06-28 19:51:21,487 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:21,496 - INFO - ✅ Enhanced Yocef Bidr (154 total)
+2025-06-28 19:51:21,496 - INFO -    Summary: Yocef Bidr is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:21,496 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:22,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:22,448 - INFO - ✅ Enhanced jason lackey (155 total)
+2025-06-28 19:51:22,449 - INFO -    Summary: Jason Lackey is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:22,449 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:23,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:23,449 - INFO - ✅ Enhanced Ahmed Tahir Nur (156 total)
+2025-06-28 19:51:23,449 - INFO -    Summary: Ahmed Tahir Nur is a dedicated part-time acting instructor and graduate teaching fellow at Yale, enriching the Humanities Program.
+2025-06-28 19:51:23,449 - INFO -    Tags: ['Graduate Student', 'Current Student', 'Faculty', 'Humanities']
+2025-06-28 19:51:24,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:24,447 - INFO - ✅ Enhanced edward keener (157 total)
+2025-06-28 19:51:24,447 - INFO -    Summary: Edward Keener is a dedicated student at Yale University, actively pursuing academic excellence and engagement in campus life.
+2025-06-28 19:51:24,447 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:25,386 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:25,389 - INFO - ✅ Enhanced Achilles Arkantos (158 total)
+2025-06-28 19:51:25,389 - INFO -    Summary: Achilles Arkantos is a dedicated student at Yale School of Management, focusing on innovative business strategies.
+2025-06-28 19:51:25,389 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Business Student']
+2025-06-28 19:51:26,225 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:26,229 - INFO - ✅ Enhanced Zoe Dion (159 total)
+2025-06-28 19:51:26,229 - INFO -    Summary: Zoe Dion is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:26,229 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:27,295 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:27,304 - INFO - ✅ Enhanced Cody Skinner (160 total)
+2025-06-28 19:51:27,305 - INFO -    Summary: Cody Skinner is a dedicated student specializing in Artificial Intelligence at Yale University.
+2025-06-28 19:51:27,305 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Data Science', 'Computer Science']
+2025-06-28 19:51:27,410 - INFO - 📈 Progress: 160/200 (80.0%)
+2025-06-28 19:51:27,410 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:51:28,449 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:51:29,439 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:29,445 - INFO - ✅ Enhanced Shreya Amin (161 total)
+2025-06-28 19:51:29,445 - INFO -    Summary: Shreya Amin is a dedicated faculty member at Yale University School of Medicine, focusing on advancing medical education and research.
+2025-06-28 19:51:29,445 - INFO -    Tags: ['Faculty', 'Medicine', 'Current Student']
+2025-06-28 19:51:30,423 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:30,431 - INFO - ✅ Enhanced Emidio Tucci (162 total)
+2025-06-28 19:51:30,431 - INFO -    Summary: Emidio Tucci is a dedicated faculty member at Yale University, contributing to academic excellence and innovative research.
+2025-06-28 19:51:30,431 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:31,505 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:31,521 - INFO - ✅ Enhanced Yuntian Liu (163 total)
+2025-06-28 19:51:31,521 - INFO -    Summary: Yuntian Liu is a dedicated PhD student at Yale University, focusing on advancing research in his field.
+2025-06-28 19:51:31,521 - INFO -    Tags: ['PhD Student', 'Current Student']
+2025-06-28 19:51:32,568 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:32,571 - INFO - ✅ Enhanced Sinyoung Kim (164 total)
+2025-06-28 19:51:32,571 - INFO -    Summary: Sinyoung Kim is a faculty member at Yale Divinity School, focusing on theological education and spiritual formation.
+2025-06-28 19:51:32,572 - INFO -    Tags: ['Faculty', 'Current Student', 'Divinity', 'Theology']
+2025-06-28 19:51:33,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:33,534 - INFO - ✅ Enhanced Nam-Hyun Kim (165 total)
+2025-06-28 19:51:33,534 - INFO -    Summary: Nam-Hyun Kim is a dedicated student at Yale University, focused on advancing knowledge in their field of study.
+2025-06-28 19:51:33,534 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:34,521 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:34,530 - INFO - ✅ Enhanced cherish ezeoke (166 total)
+2025-06-28 19:51:34,530 - INFO -    Summary: Cherish Ezeoke is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:51:34,530 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:35,550 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:35,554 - INFO - ✅ Enhanced Jessica Becker (167 total)
+2025-06-28 19:51:35,554 - INFO -    Summary: Jessica Becker is a dedicated medical student at Yale University, focusing on advancing healthcare through innovative research.
+2025-06-28 19:51:35,554 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:51:36,402 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:36,406 - INFO - ✅ Enhanced Vaibhav Aggarwal (168 total)
+2025-06-28 19:51:36,406 - INFO -    Summary: Vaibhav Aggarwal is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:36,406 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:37,323 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:37,327 - INFO - ✅ Enhanced Abdul Rauf (169 total)
+2025-06-28 19:51:37,327 - INFO -    Summary: Abdul Rauf is a dedicated student at Yale University School of Medicine, focusing on advancing medical knowledge and practice.
+2025-06-28 19:51:37,327 - INFO -    Tags: ['Medical Student', 'Current Student', 'Medicine']
+2025-06-28 19:51:38,326 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:38,338 - INFO - ✅ Enhanced tayshuna jackson (170 total)
+2025-06-28 19:51:38,338 - INFO -    Summary: Tayshuna Jackson is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:38,338 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:39,306 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:39,313 - INFO - ✅ Enhanced Jake Bilbao (171 total)
+2025-06-28 19:51:39,313 - INFO -    Summary: Jake Bilbao is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:51:39,313 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:40,667 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:40,671 - INFO - ✅ Enhanced Hannah Cutler (172 total)
+2025-06-28 19:51:40,672 - INFO -    Summary: Hannah Cutler is a dedicated student at Yale University, focused on her academic pursuits and personal growth.
+2025-06-28 19:51:40,672 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:42,554 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:42,559 - INFO - ✅ Enhanced Aalia Holt (173 total)
+2025-06-28 19:51:42,560 - INFO -    Summary: Aalia Holt is a dedicated student at Yale University, focused on academic excellence and community engagement.
+2025-06-28 19:51:42,560 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:43,494 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:43,501 - INFO - ✅ Enhanced Peggy Dana (174 total)
+2025-06-28 19:51:43,501 - INFO -    Summary: Peggy Dana is a dedicated student at Yale University, actively pursuing her academic passions.
+2025-06-28 19:51:43,501 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:44,293 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:44,295 - INFO - ✅ Enhanced 柳皓宇 (175 total)
+2025-06-28 19:51:44,296 - INFO -    Summary: Yale PhD student 柳皓宇 is dedicated to advancing research in their field of study.
+2025-06-28 19:51:44,296 - INFO -    Tags: ['PhD Student', 'Current Student']
+2025-06-28 19:51:45,339 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:45,344 - INFO - ✅ Enhanced Lucy Howell (176 total)
+2025-06-28 19:51:45,345 - INFO -    Summary: Lucy Howell is a dedicated student at Yale University, actively pursuing her academic interests and contributing to the campus community.
+2025-06-28 19:51:45,345 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:46,345 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:46,350 - INFO - ✅ Enhanced ป๋อง ร่างหนึ่ง (177 total)
+2025-06-28 19:51:46,350 - INFO -    Summary: ป๋อง ร่างหนึ่ง is a dedicated student at Yale University, actively engaging in academic pursuits.
+2025-06-28 19:51:46,350 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:47,871 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:47,874 - INFO - ✅ Enhanced Toby Salmon (178 total)
+2025-06-28 19:51:47,874 - INFO -    Summary: Toby Salmon is a faculty member at Yale University specializing in Statistics and Data Science, driving innovative research in the field.
+2025-06-28 19:51:47,875 - INFO -    Tags: ['Faculty', 'Researcher', 'Data Science', 'Statistics']
+2025-06-28 19:51:49,570 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:49,573 - INFO - ✅ Enhanced Hannah Exum (179 total)
+2025-06-28 19:51:49,573 - INFO -    Summary: Hannah Exum is a dedicated student at Yale University, focused on her academic pursuits and personal growth.
+2025-06-28 19:51:49,573 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:50,569 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:50,573 - INFO - ✅ Enhanced Sts Inquiry (180 total)
+2025-06-28 19:51:50,573 - INFO -    Summary: Sts Inquiry is a dedicated student at Yale University, actively engaging in academic pursuits.
+2025-06-28 19:51:50,573 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:50,678 - INFO - 📈 Progress: 180/200 (90.0%)
+2025-06-28 19:51:50,678 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:51:51,710 - INFO - 
+🔄 Processing batch of 20 profiles...
+2025-06-28 19:51:52,983 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:52,987 - INFO - ✅ Enhanced jasmine salem (181 total)
+2025-06-28 19:51:52,987 - INFO -    Summary: Jasmine Salem is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:51:52,987 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:54,221 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:54,225 - INFO - ✅ Enhanced Jason Holmes (182 total)
+2025-06-28 19:51:54,226 - INFO -    Summary: Jason Holmes is a dedicated J.D. candidate at Yale Law School, focusing on advancing legal scholarship and advocacy.
+2025-06-28 19:51:54,226 - INFO -    Tags: ['Law Student', 'Current Student', 'Yale Law School']
+2025-06-28 19:51:55,207 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:55,211 - INFO - ✅ Enhanced Nahom Seyoum (183 total)
+2025-06-28 19:51:55,211 - INFO -    Summary: Nahom Seyoum is a faculty member at Yale specializing in statistics, preparing for a role at Bridgewater Associates.
+2025-06-28 19:51:55,211 - INFO -    Tags: ['Faculty', 'Current Student', 'Data Science', 'Statistics']
+2025-06-28 19:51:56,063 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:56,068 - INFO - ✅ Enhanced aphin_down down (184 total)
+2025-06-28 19:51:56,068 - INFO -    Summary: A dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:51:56,068 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:57,048 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:57,053 - INFO - ✅ Enhanced Ana Diaz (185 total)
+2025-06-28 19:51:57,053 - INFO -    Summary: Ana Diaz is a dedicated faculty member at Yale University, contributing to academic excellence and research innovation.
+2025-06-28 19:51:57,053 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:51:58,009 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:58,015 - INFO - ✅ Enhanced Amavina reckless (186 total)
+2025-06-28 19:51:58,015 - INFO -    Summary: Amavina Reckless is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:51:58,015 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:51:59,170 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:51:59,178 - INFO - ✅ Enhanced Elba Heddesheimer (187 total)
+2025-06-28 19:51:59,178 - INFO -    Summary: Elba Heddesheimer is a dedicated student at Yale University, actively pursuing academic excellence and personal growth.
+2025-06-28 19:51:59,178 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:00,157 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:00,167 - INFO - ✅ Enhanced Bernadette Creme (188 total)
+2025-06-28 19:52:00,168 - INFO -    Summary: Bernadette Creme is a dedicated student at Yale University, actively engaging in her academic pursuits.
+2025-06-28 19:52:00,168 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:01,172 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:01,182 - INFO - ✅ Enhanced Reany GooseKnuckle (189 total)
+2025-06-28 19:52:01,182 - INFO -    Summary: Reany GooseKnuckle is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:52:01,182 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:02,429 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:02,431 - INFO - ✅ Enhanced Aman khan (190 total)
+2025-06-28 19:52:02,431 - INFO -    Summary: Aman Khan is a faculty member at Yale University School of Medicine, dedicated to advancing medical education and research.
+2025-06-28 19:52:02,431 - INFO -    Tags: ['Faculty', 'Medicine', 'Yale University']
+2025-06-28 19:52:04,153 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:04,158 - INFO - ✅ Enhanced Lena Qian (191 total)
+2025-06-28 19:52:04,158 - INFO -    Summary: Lena Qian is a faculty member at Yale, specializing in Computer Science and Economics as a YES Scholar.
+2025-06-28 19:52:04,158 - INFO -    Tags: ['Faculty', 'Computer Science', 'Economics']
+2025-06-28 19:52:05,479 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:05,483 - INFO - ✅ Enhanced Sarah Wilson (192 total)
+2025-06-28 19:52:05,484 - INFO -    Summary: Sarah Wilson, a Wealth Analyst at Corient, combines her expertise in Biomedical Engineering with her passion for Yale Gymnastics.
+2025-06-28 19:52:05,484 - INFO -    Tags: ['Undergraduate Student', 'Current Student', 'Biomedical Engineering', 'Yale Gymnastics']
+2025-06-28 19:52:07,021 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:07,031 - INFO - ✅ Enhanced swaymbhu mishra (193 total)
+2025-06-28 19:52:07,031 - INFO -    Summary: Swaymbhu Mishra is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:52:07,031 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:08,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:08,447 - INFO - ✅ Enhanced Julie F. (194 total)
+2025-06-28 19:52:08,447 - INFO -    Summary: Julie F. is a dedicated faculty member at Yale University, specializing in Computer Science and Chinese studies.
+2025-06-28 19:52:08,447 - INFO -    Tags: ['Faculty', 'Current Student', 'Computer Science', 'Chinese']
+2025-06-28 19:52:09,589 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:09,600 - INFO - ✅ Enhanced Radit Zalfa (195 total)
+2025-06-28 19:52:09,600 - INFO -    Summary: Radit Zalfa is a dedicated faculty member at Yale University, contributing to academic excellence and innovation.
+2025-06-28 19:52:09,600 - INFO -    Tags: ['Faculty', 'Current Student']
+2025-06-28 19:52:10,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:10,508 - INFO - ✅ Enhanced abcd wang (196 total)
+2025-06-28 19:52:10,509 - INFO -    Summary: Abcd Wang is a dedicated student at Yale University, focusing on academic excellence and community engagement.
+2025-06-28 19:52:10,509 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:11,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:11,464 - INFO - ✅ Enhanced Cat KKitten (197 total)
+2025-06-28 19:52:11,464 - INFO -    Summary: Cat KKitten is a dedicated student at Yale University, actively engaging in academic pursuits and campus initiatives.
+2025-06-28 19:52:11,464 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:12,632 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:12,635 - INFO - ✅ Enhanced John Dan (198 total)
+2025-06-28 19:52:12,635 - INFO -    Summary: John Dan is a dedicated student at Yale University, focused on academic excellence and personal growth.
+2025-06-28 19:52:12,635 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:13,556 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:13,564 - INFO - ✅ Enhanced Kyan Ramsay (199 total)
+2025-06-28 19:52:13,564 - INFO -    Summary: Kyan Ramsay is an undergraduate student at Yale University, dedicated to academic excellence and community engagement.
+2025-06-28 19:52:13,564 - INFO -    Tags: ['Undergraduate Student', 'Current Student']
+2025-06-28 19:52:14,590 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-28 19:52:14,597 - INFO - ✅ Enhanced Emma Polinsky (200 total)
+2025-06-28 19:52:14,597 - INFO -    Summary: Emma Polinsky is a dedicated faculty member at Yale University, specializing in Environmental Studies and promoting sustainable practices.
+2025-06-28 19:52:14,597 - INFO -    Tags: ['Faculty', 'Environmental Studies']
+2025-06-28 19:52:14,701 - INFO - 📈 Progress: 200/200 (100.0%)
+2025-06-28 19:52:14,701 - INFO - ⚡ Rate: 0.9 profiles/sec | Errors: 0
+2025-06-28 19:52:15,702 - INFO - 
+🎉 BATCH ENHANCEMENT COMPLETE!
+2025-06-28 19:52:15,702 - INFO - ✅ Successfully processed: 200
+2025-06-28 19:52:15,702 - INFO - ❌ Errors: 0
+2025-06-28 19:52:15,702 - INFO - ⏱️  Total time: 0:03:49.563343
+2025-06-28 19:52:15,703 - INFO - 💰 Estimated cost: $0.04

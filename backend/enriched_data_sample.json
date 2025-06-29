@@ -1,0 +1,1475 @@
+[
+  {
+    "person_id": "48a5df85-e23e-4613-ab73-0f8c3ad5e86b",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "postgraduate fellow undertaking research on the future of the restaurant industry.",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Mao Shiotsu",
+    "headline": "Yale postgraduate fellow undertaking research on the future of the restaurant industry."
+  },
+  {
+    "person_id": "25fae8ca-beee-4ec2-abad-f3d1bd656369",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "de formation des cadres",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Marouane El Mahrad",
+    "headline": "\u00c9tudiant \u00e0 Institut royale de formation des cadres"
+  },
+  {
+    "person_id": "d1d36c8e-fb00-48a2-a124-f09137bcee66",
+    "experiences": [
+      {
+        "title": "Registered Nurse",
+        "company": "Yale MSN Student 2024",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "MSN Student 2024",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Lacey W.",
+    "headline": "Registered Nurse, Yale MSN Student 2024"
+  },
+  {
+    "person_id": "3d08a0ec-3b52-4820-a895-36e778379d8e",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Tevfik Onur Kocac\u0131k",
+    "headline": "\u015eu okulda \u00f6\u011frenci: Yale University"
+  },
+  {
+    "person_id": "dad125d3-d6e2-458d-ac93-06b1b7bc0e0c",
+    "experiences": [
+      {
+        "title": "Candidate",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "field_of_study": "Candidate at Yale University",
+        "institution": "Unknown",
+        "type": "degree"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Ph.D. Candidate",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Sean Blink",
+    "headline": "Ph.D. Candidate at Yale University"
+  },
+  {
+    "person_id": "7bdc9b52-d0ea-4f78-928c-8eb628047666",
+    "experiences": [
+      {
+        "title": "23 Psychology Major",
+        "company": "Psychology Research Associate",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "'23 Psychology Major",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Shreya Patel",
+    "headline": "Yale '23 Psychology Major | Psychology Research Associate"
+  },
+  {
+    "person_id": "66dbdfe5-302d-4941-be79-c252341a3143",
+    "experiences": [
+      {
+        "title": "History and Political Science Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "History and Political Science Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Chet Hewitt",
+    "headline": "History and Political Science Student at Yale University"
+  },
+  {
+    "person_id": "a8eb7f40-bbd7-40e1-8376-dc7518176e61",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Acad\u00e9mie royale des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "jean lekok",
+    "headline": "Student at Acad\u00e9mie royale des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts"
+  },
+  {
+    "person_id": "2f0048bd-d6d2-4d2c-b33c-12532b4d34df",
+    "experiences": [
+      {
+        "title": "Econ",
+        "company": "Yale",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Yale",
+        "company": "Coca-Cola Scholar",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Rena Liu",
+    "headline": "Sociology + Econ @ Yale | Coca-Cola Scholar"
+  },
+  {
+    "person_id": "b5bc2eab-89a2-44b1-8b15-0a44c1d7c4f1",
+    "experiences": [
+      {
+        "title": "Year Literature and Anthropology Undergraduate",
+        "company": "Yale-NUS College",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Final-Year Literature and Anthropology Undergraduate",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Chelsea Kiew",
+    "headline": "Final-Year Literature and Anthropology Undergraduate at Yale-NUS College"
+  },
+  {
+    "person_id": "6451ab18-4add-40ec-ba73-c3fb857e6888",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "des Beaux-Arts et des Arts d\u00e9coratifs de Tournai)",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R",
+      "AI"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Kelo Sielmeth",
+    "headline": "\u00c9tudiant(e) (Acad\u00e9mie royale des Beaux-Arts et des Arts d\u00e9coratifs de Tournai)"
+  },
+  {
+    "person_id": "a2b43559-4c29-46cc-82b4-cc83cb0389cd",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale School of Music",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "School of Music",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [],
+    "enrichment_source": "headline_extraction",
+    "name": "Shiqi Zhong",
+    "headline": "Student at Yale School of Music"
+  },
+  {
+    "person_id": "08eb5883-f743-4069-bef1-1b55ccb15975",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Incoming Associate Consultant",
+        "company": "Bain & Company",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Student at Yale University",
+        "company": "Incoming Associate Consultant at Bain & Company",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R",
+      "AI"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Churchill Akhigbe",
+    "headline": "Student at Yale University | Incoming Associate Consultant at Bain & Company"
+  },
+  {
+    "person_id": "6f50786c-9150-4422-bc77-a2a5bc79c6bc",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University - Yale School of Management",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "sevko sezmez",
+    "headline": "\u015eu okulda \u00f6\u011frenci: Yale University - Yale School of Management"
+  },
+  {
+    "person_id": "e1132edb-3227-44c7-af37-a3266cb39d59",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University - Yale School of Management",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University - Yale School of Management",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "jack johns",
+    "headline": "Student at Yale University - Yale School of Management"
+  },
+  {
+    "person_id": "0b216e99-ce6b-409b-a727-d751c243bf53",
+    "experiences": [
+      {
+        "title": "Computer Science and Mathematics",
+        "company": "Yale",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Computer Science and Mathematics",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Felipe Tancredo",
+    "headline": "Computer Science and Mathematics at Yale"
+  },
+  {
+    "person_id": "5ee6f8f5-6fe3-40cd-82b7-aa13ed23a975",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts)",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Barbara Lemarchal",
+    "headline": "\u00c9tudiant(e) (Acad\u00e9mie royale des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts)"
+  },
+  {
+    "person_id": "62b4878a-780a-4e47-ae15-6b39b3ad17ad",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University - Tsinghua University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Julio C\u00e9sar Manjarrez",
+    "headline": "Instituto Tecnol\u00f3gico y de Estudios Superiores de Monterrey - Yale University - Tsinghua University"
+  },
+  {
+    "person_id": "bf5007ed-4619-4c16-9e58-ecaedf1b09cb",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University School of Medicine",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University School of Medicine",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Brian Letzen",
+    "headline": "Student at Yale University School of Medicine"
+  },
+  {
+    "person_id": "7946fc7b-a955-404a-83ab-633ff2351ed4",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Student at Yale University",
+        "company": "Directed Studies",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Daniela Klein",
+    "headline": "Student at Yale University | Directed Studies"
+  },
+  {
+    "person_id": "7cbe4029-11ea-48a5-95b6-2d08d40b8eec",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "dugda bokro",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Sunil mandal",
+    "headline": "Attended Aadars mahavidyale dugda bokro"
+  },
+  {
+    "person_id": "b98e0d7f-5352-4806-b749-3ffe3bb55fb3",
+    "experiences": [
+      {
+        "title": "History and Political Science",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "History and Political Science",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Ben Card",
+    "headline": "History and Political Science at Yale University"
+  },
+  {
+    "person_id": "f8f47283-fbbd-403c-831b-716600a263f1",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "jale atl\u0131",
+    "headline": "\u015eu okulda \u00f6\u011frenci: Yale University"
+  },
+  {
+    "person_id": "309c1ddd-6d52-46ea-86da-b3f5dfec6535",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Militaire",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R",
+      "AI"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Sagbo Damien GNONLONFOUN",
+    "headline": "\u00c9tudiant \u00e0 Academie Royale Militaire"
+  },
+  {
+    "person_id": "9039a4bd-6633-4a18-b6ed-386bdafccd38",
+    "experiences": [
+      {
+        "title": "Submarine Warfare Officer Instructor",
+        "company": "Yale NROTC",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "25",
+        "company": "Submarine Warfare Officer Instructor at Yale NROTC",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA",
+        "field_of_study": "Candidate '25",
+        "institution": "Unknown",
+        "type": "degree"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "MBA Candidate '25",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "NROTC",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Submarine Warfare Officer Instructor",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Ryan Buck",
+    "headline": "Yale MBA Candidate '25 | Submarine Warfare Officer Instructor at Yale NROTC"
+  },
+  {
+    "person_id": "384299c7-1cfa-441a-9722-d2de54299250",
+    "experiences": [
+      {
+        "title": "Lawyer",
+        "company": "Yale Law School",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Law School",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Will McGee",
+    "headline": "Lawyer | Yale Law School | Reserve Marine Officer"
+  },
+  {
+    "person_id": "1b9fe9c4-2695-4642-85d8-b3a0c764c834",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Oasiff Daewc",
+    "headline": "\u015eu okulda \u00f6\u011frenci: Yale University"
+  },
+  {
+    "person_id": "e484f51e-3fab-447a-89ab-1c3ffee9a921",
+    "experiences": [
+      {
+        "title": "Global Affairs",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Global Affairs",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R",
+      "AI"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Owen Williams",
+    "headline": "Global Affairs at Yale University"
+  },
+  {
+    "person_id": "4293de78-6763-4c55-b303-e78821dd4811",
+    "experiences": [
+      {
+        "title": "Computing and the Arts",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Philomena Wu",
+    "headline": "Computing and the Arts @ Yale University"
+  },
+  {
+    "person_id": "ab5f9c36-a697-4c6f-993b-b5b9a49601fe",
+    "experiences": [
+      {
+        "title": "Graduate Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Graduate Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Yinsheng Lu",
+    "headline": "Graduate Student at Yale University"
+  },
+  {
+    "person_id": "6328376c-73d7-4e53-9326-842dca22ca85",
+    "experiences": [
+      {
+        "title": "Senior",
+        "company": "Yale University pursing a B.A in Global Affairs",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University pursing a B.A in Global Affairs",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Senior",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R",
+      "AI"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Georgette Uwera Nyiraneza",
+    "headline": "Senior at Yale University pursing a B.A in Global Affairs"
+  },
+  {
+    "person_id": "b55e58b1-bd39-43cc-a867-40e555f25143",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Law School e\u011fitim kurumunda \u00f6\u011frenci",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "\u00dclk\u00fc Bet\u00fcl Karaer",
+    "headline": "Yale Law School e\u011fitim kurumunda \u00f6\u011frenci"
+  },
+  {
+    "person_id": "be021027-7bd9-4bc2-9637-02b6fe6f4ffa",
+    "experiences": [
+      {
+        "title": "S2",
+        "company": "Yale University School of Medicine",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University School of Medicine",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "PA-S2",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Mai V.",
+    "headline": "PA-S2 at Yale University School of Medicine"
+  },
+  {
+    "person_id": "e25aaf54-9147-4cf9-9aa2-34a6b9cf0386",
+    "experiences": [
+      {
+        "title": "Athlete",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student-Athlete",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Meghna S.",
+    "headline": "Student-Athlete at Yale University"
+  },
+  {
+    "person_id": "abb53844-c420-4088-826c-ec0829fd8e97",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "de Phnom Penh)",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Sreyphal keo",
+    "headline": "\u00c9tudiant(e) (Universit\u00e9 Royale de Phnom Penh)"
+  },
+  {
+    "person_id": "6d366857-e6aa-4df2-a395-b51aa076aa9b",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University - Yale School of Management)",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Joris Van der Wiel",
+    "headline": "\u00c9tudiant(e) (Yale University - Yale School of Management)"
+  },
+  {
+    "person_id": "ed3a1cf3-9115-48da-b080-3823c9511d87",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "d'Evere",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Denis Angelovski",
+    "headline": "A \u00e9tudi\u00e9 \u00e0 : Ath\u00e9n\u00e9e royale d'Evere"
+  },
+  {
+    "person_id": "4d75c184-d07d-4e1e-a007-cf56e46cb05a",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "fran\u00e7oise venus",
+    "headline": "\u00c9tudiant \u00e0 Acad\u00e9mie royale des Beaux-Arts de Bruxelles - Ecole sup\u00e9rieure des Arts"
+  },
+  {
+    "person_id": "7503e1bf-6687-44a0-8133-032822a56728",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University School of Medicine",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University School of Medicine",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Laura Hoyt",
+    "headline": "Student at Yale University School of Medicine"
+  },
+  {
+    "person_id": "11db7834-5787-41b1-bdd2-bb110ce74c8b",
+    "experiences": [],
+    "education": [],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Tyler Lewis",
+    "headline": "Economics + Computer Science @Yale"
+  },
+  {
+    "person_id": "3a025002-4230-4e0f-9a2a-6598a9036df6",
+    "experiences": [
+      {
+        "title": "Student",
+        "company": "Yale University - Yale School of Management",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University - Yale School of Management",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Vaishnavi Nemani",
+    "headline": "Student at Yale University - Yale School of Management"
+  },
+  {
+    "person_id": "bac57231-cf9d-42f4-b455-246b7a4eabae",
+    "experiences": [
+      {
+        "title": "Yale University Swimming Instructor",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University Swimming Instructor at Yale University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Yale University Swimming Instructor",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Paul Mitchell",
+    "headline": "Yale University Swimming Instructor at Yale University"
+  },
+  {
+    "person_id": "6b1801f7-aa3a-41ae-976d-efc23c7bd883",
+    "experiences": [
+      {
+        "title": "Junior Music and Medieval Studies Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Junior Music and Medieval Studies Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Ava Gaughan",
+    "headline": "Junior Music and Medieval Studies Student at Yale University"
+  },
+  {
+    "person_id": "14eb47bd-facf-4f54-9a27-a45a75d65a85",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University School of Medicine)",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Sina Mechi Kand\u0131ral\u0131",
+    "headline": "Kat\u0131ld\u0131 (Yale University School of Medicine)"
+  },
+  {
+    "person_id": "e0f909b9-659e-4f80-8c88-93f887eed469",
+    "experiences": [
+      {
+        "title": "Fort\u00e9 Fellowship",
+        "company": "Tsinghua University 24'",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Strategy",
+        "company": "Social Media Influencer with 30k followers",
+        "is_current": true,
+        "type": "current"
+      },
+      {
+        "title": "Yale Silver Scholar MBA",
+        "company": "Fort\u00e9 Fellowship",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Silver Scholar MBA",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "Strategy",
+      "Consulting",
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Jialu Zheng",
+    "headline": "Yale Silver Scholar MBA, Fort\u00e9 Fellowship | Tsinghua University 24' | Consulting & Strategy | Social Media Influencer with 30k followers"
+  },
+  {
+    "person_id": "9dbbb969-8e6e-4db6-b7e5-18452a8e37c8",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "Environmental Engineering Student-Athlete",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Jose Alberto Cano Figueroa",
+    "headline": "Yale Environmental Engineering Student-Athlete"
+  },
+  {
+    "person_id": "1c5bd008-58f7-4a01-8611-e9a87ca6c3d0",
+    "experiences": [
+      {
+        "title": "Electrical Engineering Student",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Electrical Engineering Student",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Renin Kottaviruthil",
+    "headline": "Electrical Engineering Student at Yale University"
+  },
+  {
+    "person_id": "d0c9ee87-bb6e-4e83-b891-766b36f651f2",
+    "experiences": [
+      {
+        "title": "Assistant Dean",
+        "company": "Yale University",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Assistant Dean",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Timeica Bethel",
+    "headline": "Assistant Dean at Yale University"
+  },
+  {
+    "person_id": "0bcbeadb-716f-4cef-997d-a9e9a6904411",
+    "experiences": [
+      {
+        "title": "Chemical and Environmental Engineering PhD Student",
+        "company": "Yale",
+        "is_current": true,
+        "type": "current"
+      }
+    ],
+    "education": [
+      {
+        "degree": "PhD",
+        "field_of_study": "Student at Yale",
+        "institution": "Unknown",
+        "type": "degree"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "Chemical and Environmental Engineering PhD Student",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "Makenna Parkinson",
+    "headline": "Chemical and Environmental Engineering PhD Student at Yale"
+  },
+  {
+    "person_id": "a3dca679-6aca-47ec-8467-232046e79bc5",
+    "experiences": [],
+    "education": [
+      {
+        "degree": "Unknown",
+        "field_of_study": "University",
+        "institution": "Yale University",
+        "type": "yale"
+      },
+      {
+        "degree": "Unknown",
+        "field_of_study": "General Studies",
+        "institution": "Yale University",
+        "type": "yale"
+      }
+    ],
+    "skills": [
+      "R"
+    ],
+    "enrichment_source": "headline_extraction",
+    "name": "skajd ad",
+    "headline": "\u015eu okulda \u00f6\u011frenci: Yale University"
+  }
+]

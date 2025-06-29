@@ -1,0 +1,33 @@
+2025-06-28 18:13:01,247 - INFO - 🚀 Starting CLEAN full scale Yale data import
+2025-06-28 18:13:01,248 - INFO - 🧹 Filtering out lorem ipsum, test data, examples, and duplicates
+2025-06-28 18:13:01,248 - INFO - 🗑️  Clearing existing data...
+2025-06-28 18:13:01,448 - INFO - ✅ Existing data cleared
+2025-06-28 18:13:01,515 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-06-28 18:13:01,732 - INFO - Starting to stream data from s3://people-data-yale-2025/brightdata/education_yale/milo_20250529_110131.json
+2025-06-28 18:13:01,991 - INFO - File size: 3.0 GB
+2025-06-28 18:13:03,067 - INFO - ✅ Imported 50 clean Yale people (30.9 people/sec)
+2025-06-28 18:13:03,356 - INFO - ✅ Imported 100 clean Yale people (52.4 people/sec)
+2025-06-28 18:13:03,357 - INFO - 🎓 Progress: Found 100 clean Yale people (from 125 total records)
+2025-06-28 18:13:03,683 - INFO - ✅ Imported 150 clean Yale people (67.1 people/sec)
+2025-06-28 18:13:04,051 - INFO - ✅ Imported 200 clean Yale people (76.8 people/sec)
+2025-06-28 18:13:04,051 - INFO - 🎓 Progress: Found 200 clean Yale people (from 243 total records)
+2025-06-28 18:13:04,057 - INFO - 🎓 Progress: Found 200 clean Yale people (from 244 total records)
+2025-06-28 18:13:04,393 - INFO - ✅ Imported 250 clean Yale people (84.9 people/sec)
+2025-06-28 18:13:04,717 - INFO - ✅ Imported 300 clean Yale people (91.8 people/sec)
+2025-06-28 18:13:04,717 - INFO - 🎓 Progress: Found 300 clean Yale people (from 365 total records)
+2025-06-28 18:13:05,050 - INFO - ✅ Imported 350 clean Yale people (97.2 people/sec)
+2025-06-28 18:13:05,421 - INFO - ✅ Imported 400 clean Yale people (100.7 people/sec)
+2025-06-28 18:13:05,421 - INFO - 🎓 Progress: Found 400 clean Yale people (from 494 total records)
+2025-06-28 18:13:05,716 - INFO - ✅ Imported 450 clean Yale people (105.4 people/sec)
+2025-06-28 18:13:17,447 - INFO - ✅ Imported 500 clean Yale people (31.3 people/sec)
+2025-06-28 18:13:17,447 - INFO - 🎓 Progress: Found 500 clean Yale people (from 662 total records)
+2025-06-28 18:13:17,816 - INFO - ✅ Imported 550 clean Yale people (33.6 people/sec)
+2025-06-28 18:13:18,131 - INFO - ✅ Imported 600 clean Yale people (36.0 people/sec)
+2025-06-28 18:13:18,131 - INFO - 🎓 Progress: Found 600 clean Yale people (from 781 total records)
+2025-06-28 18:13:18,133 - INFO - 🎓 Progress: Found 600 clean Yale people (from 782 total records)
+2025-06-28 18:13:18,137 - INFO - 🎓 Progress: Found 600 clean Yale people (from 783 total records)
+2025-06-28 18:13:18,478 - INFO - ✅ Imported 650 clean Yale people (38.2 people/sec)
+2025-06-28 18:13:18,783 - INFO - ✅ Imported 700 clean Yale people (40.4 people/sec)
+2025-06-28 18:13:18,783 - INFO - 🎓 Progress: Found 700 clean Yale people (from 902 total records)
+2025-06-28 18:13:18,785 - INFO - 🎓 Progress: Found 700 clean Yale people (from 903 total records)
+2025-06-28 18:13:19,062 - INFO - ✅ Imported 750 clean Yale people (42.6 people/sec)

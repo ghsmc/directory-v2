@@ -1,0 +1,49 @@
+[
+  {
+    "test": "api_health",
+    "status": "error",
+    "error": "'total_people'"
+  },
+  {
+    "test": "query_analysis",
+    "query": "Fintech PMs in NYC who went to Stanford",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "query_analysis",
+    "query": "Yale SOM alumni working in venture capital",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "query_analysis",
+    "query": "Connecticut entrepreneurs in healthcare",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "query_analysis",
+    "query": "Yale professors and researchers in AI",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "basic_hybrid_search",
+    "query": "Yale people in Connecticut",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "basic_hybrid_search",
+    "query": "founders and entrepreneurs",
+    "status": "fail",
+    "error": "Status code: 404"
+  },
+  {
+    "test": "basic_hybrid_search",
+    "query": "professors and academics",
+    "status": "fail",
+    "error": "Status code: 404"
+  }
+]

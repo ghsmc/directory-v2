@@ -1,0 +1,12 @@
+INFO:     Started server process [74792]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+🚀 Starting Enriched Yale Network Search API v3.0...
+📍 API will be available at: http://localhost:8003
+📖 Documentation at: http://localhost:8003/docs
+🔍 Enriched search: http://localhost:8003/enriched-search?q=founders
+🧠 Rich data extraction, AI enhancement, professional categorization
+INFO:     127.0.0.1:65500 - "GET /enriched-search?q=venture%20capitalists&limit=5&include_analysis=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65535 - "GET /analyze-query?q=computer%20science%20yale HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65535 - "GET /enriched-search?q=computer%20science%20yale&limit=20&include_analysis=true HTTP/1.1" 200 OK
