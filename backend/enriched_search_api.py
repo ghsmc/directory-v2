@@ -20,8 +20,8 @@ from data_enricher import DataEnricher
 load_dotenv()
 
 app = FastAPI(
-    title="Yale Network Search - Enriched API",
-    description="AI-powered search with rich profile data extraction and analysis",
+    title="Happenstance - Yale Network Search API",
+    description="AI-powered discovery engine for Yale's network with real-time streaming search",
     version="3.0.0"
 )
 
@@ -96,13 +96,13 @@ def enrich_search_results(results: List[Dict]) -> List[Dict]:
 async def root():
     """API information"""
     return {
-        "message": "Yale Network Search - Enriched API v3.0",
+        "message": "Happenstance - Yale Network Search API v3.0",
         "features": [
-            "AI-powered query enhancement",
-            "Rich data extraction from headlines",
-            "Experience and education parsing",
-            "Skills identification",
-            "Professional role categorization"
+            "Real-time streaming search results",
+            "AI-powered query enhancement with GPT-4o-mini",
+            "Massively expanded search conditions",
+            "Rich data extraction from LinkedIn headlines",
+            "Professional role categorization and scoring"
         ],
         "data_richness": {
             "total_profiles": "14,412",
@@ -112,8 +112,9 @@ async def root():
             "academic_roles": "320"
         },
         "endpoints": {
+            "streaming_search": "/search-stream?q=query",
             "enriched_search": "/enriched-search?q=query",
-            "profile_analysis": "/analyze-profile?name=full_name",
+            "query_analysis": "/analyze-query?q=query",
             "data_stats": "/data-stats"
         }
     }
@@ -202,7 +203,17 @@ async def streaming_search(
         except Exception as e:
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
     
-    return StreamingResponse(generate_stream(), media_type="text/plain")
+    return StreamingResponse(
+        generate_stream(), 
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET",
+            "Access-Control-Allow-Headers": "*"
+        }
+    )
 
 @app.get("/enriched-search")
 async def enriched_search(
@@ -601,10 +612,10 @@ def _generate_professional_scoring(traits: List[str]) -> str:
 
 if __name__ == "__main__":
     import uvicorn
-    print("🚀 Starting Enriched Yale Network Search API v3.0...")
+    print("🚀 Starting Happenstance - Yale Network Search API v3.0...")
     print("📍 API will be available at: http://localhost:8003")
     print("📖 Documentation at: http://localhost:8003/docs")
-    print("🔍 Enriched search: http://localhost:8003/enriched-search?q=founders")
-    print("🧠 Rich data extraction, AI enhancement, professional categorization")
+    print("🔍 Streaming search: http://localhost:8003/search-stream?q=founders")
+    print("🧠 Real-time AI-powered discovery engine for Yale's network")
     
     uvicorn.run(app, host="0.0.0.0", port=8003)

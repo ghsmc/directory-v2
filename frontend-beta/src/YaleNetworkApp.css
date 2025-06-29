@@ -93,7 +93,7 @@ body {
   width: auto;
 }
 
-.milo-grid-logo {
+.happenstance-grid-logo {
   display: grid;
   grid-template-columns: repeat(3, 4px);
   grid-template-rows: repeat(3, 4px);
@@ -556,7 +556,7 @@ body {
   font-weight: 500;
 }
 
-.milo-logo-small {
+.happenstance-logo-small {
   display: flex;
   align-items: center;
   gap: 6px;

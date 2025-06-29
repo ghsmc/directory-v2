@@ -147,8 +147,15 @@ function HappenstanceApp() {
 
       eventSource.onerror = (error) => {
         console.error('EventSource failed:', error);
+        console.log('EventSource readyState:', eventSource.readyState);
         setIsSearching(false);
         eventSource.close();
+        
+        // Fallback to regular search
+        console.log('Falling back to regular search...');
+        setTimeout(() => {
+          handleFallbackSearch(searchQuery);
+        }, 100);
       };
 
       // Cleanup function to close EventSource when component unmounts
@@ -161,6 +168,30 @@ function HappenstanceApp() {
       setResults([]);
       setTotalResults(0);
       setProcessingSteps(prev => prev.map(step => ({ ...step, status: 'pending' })));
+      setIsSearching(false);
+    }
+  };
+
+  const handleFallbackSearch = async (searchQuery: string) => {
+    try {
+      const response = await fetch(`http://localhost:8003/enriched-search?q=${encodeURIComponent(searchQuery)}&limit=20&include_analysis=true`);
+      const data: SearchResponse = await response.json();
+
+      setResults(data.results || []);
+      setTotalResults(data.total_results || 0);
+      setSearchTime(data.search_time_ms || 0);
+      
+      if (data.query_analysis) {
+        setQueryAnalysis(data.query_analysis);
+      }
+
+      // Complete all steps
+      setProcessingSteps(prev => prev.map(step => ({ ...step, status: 'completed' })));
+      setIsSearching(false);
+    } catch (error) {
+      console.error('Fallback search failed:', error);
+      setResults([]);
+      setTotalResults(0);
       setIsSearching(false);
     }
   };
@@ -199,7 +230,7 @@ function HappenstanceApp() {
               alt="Yale University" 
               className="yale-logo"
             />
-            <div className="milo-grid-logo">
+            <div className="happenstance-grid-logo">
               <div className="grid-dot red"></div>
               <div className="grid-dot yellow"></div>
               <div className="grid-dot green"></div>
@@ -347,7 +378,7 @@ function HappenstanceApp() {
               <div className="search-info">
                 <div className="search-stats">
                   <span className="you-indicator">
-                    <div className="milo-logo-small">
+                    <div className="happenstance-logo-small">
                       <div className="logo-dots-small">
                         <span className="dot-small red"></span>
                         <span className="dot-small yellow"></span>
