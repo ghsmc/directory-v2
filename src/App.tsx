@@ -9,6 +9,7 @@ import { Directory } from './pages/Directory';
 import { Feed } from './pages/Feed';
 import { Chat } from './pages/Chat';
 import { Auth } from './pages/Auth';
+import ProfilePage from './pages/Profile';
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
@@ -59,6 +60,7 @@ function App() {
           <Route path="/people" element={<Directory />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       )}

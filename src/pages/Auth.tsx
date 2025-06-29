@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@supabase/supabase-js';
 import { useDropzone } from 'react-dropzone';
@@ -37,19 +37,6 @@ const companies = [
   'Stripe'
 ];
 
-const universities = [
-  'Yale University',
-  'Harvard University',
-  'Princeton University',
-  'MIT',
-  'Stanford University',
-  'Columbia University',
-  'University of Pennsylvania',
-  'Brown University',
-  'Dartmouth College',
-  'Cornell University'
-];
-
 export function Auth() {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
@@ -63,8 +50,15 @@ export function Auth() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [step, setStep] = useState(1);
-  const [validationMessage, setValidationMessage] = useState('');
   const [validationField, setValidationField] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<{
+    name?: boolean;
+    university?: boolean;
+    email?: boolean;
+    password?: boolean;
+  }>({});
+  const [showValidationPopup, setShowValidationPopup] = useState(false);
+  const [isPollingForVerification, setIsPollingForVerification] = useState(false);
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     if (acceptedFiles.length > 0) {
@@ -104,48 +98,43 @@ export function Auth() {
     });
   };
 
-  const validateField = (field: string, value: string) => {
-    if (!value && field === 'name') {
-      setValidationMessage('Please enter your full name');
-      setValidationField('name');
-      return false;
+  const validateField = (field: 'name' | 'university' | 'email' | 'password', value: string): boolean => {
+    let isValid = true;
+    if (!value) {
+      setFieldErrors(prev => ({ ...prev, [field]: true }));
+      isValid = false;
+    } else {
+      setFieldErrors(prev => ({ ...prev, [field]: false }));
     }
-    if (!value && field === 'university') {
-      setValidationMessage('Please select your university');
-      setValidationField('university');
-      return false;
+    
+    // Clear any lingering validation message from the old popup system
+    if (validationField === field) {
+        setValidationField(null);
     }
-    if (!value && field === 'email') {
-      setValidationMessage('Please enter your email address');
-      setValidationField('email');
-      return false;
-    }
-    if (!value && field === 'password') {
-      setValidationMessage('Please enter your password');
-      setValidationField('password');
-      return false;
-    }
-    return true;
+
+    return isValid;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Clear previous validation messages
-    setValidationMessage('');
-    setValidationField(null);
-
     // Validate required fields
+    let allFieldsValid = true;
     if (!isLogin) {
       if (step === 1) {
-        if (!validateField('name', name)) return;
-        if (!validateField('university', university)) return;
-        if (!validateField('email', email)) return;
-        if (!validateField('password', password)) return;
+        allFieldsValid = validateField('name', name) && allFieldsValid;
+        allFieldsValid = validateField('university', university) && allFieldsValid;
+        allFieldsValid = validateField('email', email) && allFieldsValid;
+        allFieldsValid = validateField('password', password) && allFieldsValid;
       }
     } else {
-      if (!validateField('email', email)) return;
-      if (!validateField('password', password)) return;
+      allFieldsValid = validateField('email', email) && allFieldsValid;
+      allFieldsValid = validateField('password', password) && allFieldsValid;
+    }
+    
+    if (!allFieldsValid) {
+        setLoading(false);
+        return; // Stop submission if any field is invalid
     }
 
     setLoading(true);
@@ -160,6 +149,7 @@ export function Auth() {
         if (error) throw error;
       } else {
         if (step < 3) {
+          // Directly proceed to the next step, since check-user-exists is removed
           setStep(step + 1);
           setLoading(false);
           return;
@@ -178,7 +168,16 @@ export function Auth() {
             },
           },
         });
-        if (error) throw error;
+        if (error) {
+          setError(error.message || 'An error occurred during signup.');
+          setShowValidationPopup(false);
+          setIsPollingForVerification(false);
+          setLoading(false);
+          return;
+        }
+
+        setShowValidationPopup(true);
+        setIsPollingForVerification(true);
 
         // Upload resume if provided
         if (resume) {
@@ -187,6 +186,8 @@ export function Auth() {
             .upload(`${email}/resume.pdf`, resume);
           if (uploadError) throw uploadError;
         }
+
+        localStorage.setItem('milo_user_verified', 'true');
       }
     } catch (err: any) {
       setError(err.message);
@@ -200,7 +201,7 @@ export function Auth() {
       case 1:
         return (
           <>
-            <div className="relative">
+            <div className={`relative ${fieldErrors.name ? 'border border-error-red rounded-lg' : ''}`}>
               <User
                 size={18}
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -210,16 +211,11 @@ export function Auth() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Full name"
-                className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              />
-              <ValidationPopup
-                message={validationMessage}
-                show={validationField === 'name'}
-                onClose={() => setValidationField(null)}
+                className={`w-full pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${fieldErrors.name ? 'border-error-red' : 'border border-gray-200'}`}
               />
             </div>
 
-            <div className="relative">
+            <div className={`relative ${fieldErrors.university ? 'border border-error-red rounded-lg' : ''}`}>
               <School2
                 size={18}
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10"
@@ -228,14 +224,9 @@ export function Auth() {
                 value={university}
                 onChange={setUniversity}
               />
-              <ValidationPopup
-                message={validationMessage}
-                show={validationField === 'university'}
-                onClose={() => setValidationField(null)}
-              />
             </div>
 
-            <div className="relative">
+            <div className={`relative ${fieldErrors.email ? 'border border-error-red rounded-lg' : ''}`}>
               <Mail
                 size={18}
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -245,16 +236,11 @@ export function Auth() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email address"
-                className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              />
-              <ValidationPopup
-                message={validationMessage}
-                show={validationField === 'email'}
-                onClose={() => setValidationField(null)}
+                className={`w-full pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${fieldErrors.email ? 'border-error-red' : 'border border-gray-200'}`}
               />
             </div>
 
-            <div className="relative">
+            <div className={`relative ${fieldErrors.password ? 'border border-error-red rounded-lg' : ''}`}>
               <Lock
                 size={18}
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -264,12 +250,7 @@ export function Auth() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
-                className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              />
-              <ValidationPopup
-                message={validationMessage}
-                show={validationField === 'password'}
-                onClose={() => setValidationField(null)}
+                className={`w-full pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${fieldErrors.password ? 'border-error-red' : 'border border-gray-200'}`}
               />
             </div>
           </>
@@ -368,6 +349,19 @@ export function Auth() {
     }
   };
 
+  useEffect(() => {
+    function handleStorage(event: StorageEvent) {
+      if (event.key === 'milo_user_verified' && event.newValue === 'true') {
+        // Only close if this tab is not focused (so the new tab stays open)
+        if (!document.hasFocus()) {
+          window.close();
+        }
+      }
+    }
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 -z-10">
@@ -421,7 +415,7 @@ export function Auth() {
                     animate={{ opacity: 1, y: 0 }}
                     className="space-y-4"
                   >
-                    <div className="relative">
+                    <div className={`relative ${fieldErrors.email ? 'border border-error-red rounded-lg' : ''}`}>
                       <Mail
                         size={18}
                         className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -431,16 +425,11 @@ export function Auth() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Email address"
-                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                      />
-                      <ValidationPopup
-                        message={validationMessage}
-                        show={validationField === 'email'}
-                        onClose={() => setValidationField(null)}
+                        className={`w-full pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${fieldErrors.email ? 'border-error-red' : 'border border-gray-200'}`}
                       />
                     </div>
 
-                    <div className="relative">
+                    <div className={`relative ${fieldErrors.password ? 'border border-error-red rounded-lg' : ''}`}>
                       <Lock
                         size={18}
                         className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -450,12 +439,7 @@ export function Auth() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder="Password"
-                        className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                      />
-                      <ValidationPopup
-                        message={validationMessage}
-                        show={validationField === 'password'}
-                        onClose={() => setValidationField(null)}
+                        className={`w-full pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all ${fieldErrors.password ? 'border-error-red' : 'border border-gray-200'}`}
                       />
                     </div>
                   </motion.div>
@@ -524,6 +508,15 @@ export function Auth() {
           </div>
         )}
       </motion.div>
+
+      <ValidationPopup
+        message="A verification email has been sent. Please check your inbox to verify your account before logging in."
+        show={showValidationPopup}
+        onClose={() => setShowValidationPopup(false)}
+        email={email}
+        showSpinner={isPollingForVerification}
+        isPersistent={isPollingForVerification}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { AlignLeft, Briefcase, Building2, Users2, MessageSquare } from 'lucide-react';
+import { AlignLeft, Briefcase, Building2, Users2, MessageSquare, UserCircle2 } from 'lucide-react';
 
 export function Navbar() {
   const location = useLocation();
@@ -65,9 +65,9 @@ export function Navbar() {
 
         {/* Bottom Icons */}
         <div className="mt-auto flex flex-col items-center gap-3">
-          <button className="w-[42px] h-[42px] flex items-center justify-center rounded-[14px] bg-gray-50/80">
-            <div className="w-[22px] h-[22px] rounded-full bg-gray-300" />
-          </button>
+          <Link to="/profile" className={`w-[42px] h-[42px] flex items-center justify-center rounded-[14px] ${location.pathname === '/profile' ? 'bg-blue-100 text-blue-600' : 'bg-gray-50/80 text-gray-400 hover:text-blue-600'}`}>
+            <UserCircle2 size={22} />
+          </Link>
         </div>
       </nav>
 
@@ -95,6 +95,11 @@ export function Navbar() {
               </Link>
             );
           })}
+          {/* Profile icon for mobile */}
+          <Link to="/profile" className={`flex flex-col items-center justify-center gap-1 ${location.pathname === '/profile' ? 'text-blue-600' : 'text-gray-400 hover:text-blue-600'}`}>
+            <UserCircle2 size={24} />
+            <span className="text-[10px] font-medium leading-none">Profile</span>
+          </Link>
         </div>
       </nav>
     </>
